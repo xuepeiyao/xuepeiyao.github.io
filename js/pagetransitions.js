@@ -3,6 +3,8 @@ var PageTransitions = (function() {
 	var $main = $( '#pt-main' ),
 		$pages = $main.children( 'div.pt-page' ),
 		$iterate = $( '#iterateEffects' ),
+		$about_me = $('#about_me'),
+        $to_index = $('#to_index'),
 		animcursor = 1,
 		pagesCount = $pages.length,
 		current = 0,
@@ -36,6 +38,35 @@ var PageTransitions = (function() {
 				nextPage( el.data( 'animation' ) );
 			}
 		} );
+
+        $about_me.on('click',function () {
+            if( isAnimating ) {
+                return false;
+            }
+            if( animcursor > 67 ) {
+                animcursor = 1;
+            }
+            nextPage( animcursor );
+            if(animcursor==1){
+                animcursor=2
+            }else{
+                animcursor=1
+            }
+        });
+        $to_index.on('click',function () {
+            if( isAnimating ) {
+                return false;
+            }
+            if( animcursor > 67 ) {
+                animcursor = 1;
+            }
+            nextPage( animcursor );
+            if(animcursor==1){
+                animcursor=2
+            }else{
+                animcursor=1
+            }
+        });
 
 		$iterate.on( 'click', function() {
 			if( isAnimating ) {
