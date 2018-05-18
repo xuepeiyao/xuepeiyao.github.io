@@ -1,58 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn" class="no-js">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.bootcss.com/Swiper/4.2.6/css/swiper.min.css" rel="stylesheet">
-    <style>
-        .swiper-container {
-            width: 72%;
-            height: 900px;
-        }
-
-        .swiper-pagination.swiper-pagination-progressbar {
-            width: 100%;
-            height: 8px;
-            left: 0;
-            top: auto;
-            bottom: 0;
-            background: #979797;
-        }
-    </style>
-    <title>详情页</title>
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>一组超炫的页面切换效果（Page Transitions）</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="css/multilevelmenu.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animations.css"/>
+    <link rel="stylesheet" href="css/merge.min.css">
+    <script src="js/modernizr.custom.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 </head>
 <body>
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide blue-slide">Slide 1</div>
-        <div class="swiper-slide red-slide">Slide 2</div>
-        <div class="swiper-slide orange-slide">Slide 3</div>
+<div class="pt-triggers">
+    <button id="iterateEffects" class="pt-touch-button"></button>
+</div><!-- /triggers -->
+
+<div id="pt-main" class="pt-perspective">
+    <div class="pt-page pt-page-1">
+        <div class="xpy_index">
+            <div class="xpy_left_page">
+                <em class="em_pei"><img src="images/page_1.png" /></em>
+                <div class="page_info"><img src="images/banquan.png" /></div>
+            </div>
+            <div class="xpy_right_page">
+                <div class="xpy_nav">
+                    <div class="nav_item">All Work</div>
+                    <div class="nav_item">Communication Design</div>
+                    <div class="nav_item">UI Design</div>
+                    <div class="nav_item">Web Design</div>
+                    <div class="nav_item">Poster Design</div>
+                    <div class="nav_item">illustration</div>
+                </div>
+                <div class="xpy_cont_page">
+                    <div class="cont_list">
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div class="cont_list">
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div class="l_item">
+                            <div class="l_img"></div>
+                            <span>华阳景区</span>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-page pt-page-2">
+        <div class="xpy_t_left_page">
+            <em class="em_pei"><img src="images/Group3.png" /></em>
+        </div>
+        <div class="page_about">
+            <img class="tuxiang" src="images/touxiang.png">
+            <div class="o-cont">
+                <h5>about</h5>
+                <div class="name-r">薛佩瑶/Agnes</div>
+                <div class="size-18">ui/视觉资深设计师</div>
+                <h5>work experience</h5>
+                <div>贺冰凇视觉艺术有限公司</div>
+                <div>蓝色光标数字营销机构</div>
+                <div>博达软件股份有限公司</div>
+                <div>博达软件股份有限公司</div>
+                <h5>service</h5>
+                <div>
+                    TEDx Xi’an</div>
+                <div>梅赛德斯奔驰</div>
+                <div>西安城墙</div>
+                <div> 西安临潼旅游休闲度假区</div>
+                <div> 华阳景区</div>
+                <div>西安曲江管委会</div>
+                <div>西安音乐厅</div>
+                <div>大连音乐家协会流行音乐学会</div>
+                <div>长庆石油等</div>
+                <h5>honor</h5>
+                <div>大连啤酒节吉祥物优秀奖</div>
+                <div>第六届全国设计艺术大赛优秀奖</div>
+                <div>全国艺术院校美术作品大赛三等奖</div>
+                <h5>contact</h5>
+                <div class="b-icon">
+                    <a>
+                        <img src="images/instagram-2.png">
+                        <i>微信</i>
+                    </a>
+                    <a><img src="images/instagram-2.png"><i>微博</i></a>
+                    <a><img src="images/instagram-2.png"><i>Instagram</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="page_info"><img src="images/group4.png" /></div>
     </div>
 
-    <div class="swiper-pagination"></div>
-
-    <div class="swiper-button-prev swiper-button-black"></div>
-    <div class="swiper-button-next swiper-button-black"></div> <!-- 黑色 -->
-
+    <div class="pt-message">
+        <p>亲，你的浏览器不支持 CSS 动画，请使用 Chrome,Firefox,Safari 等浏览器浏览.</p>
+    </div>
 </div>
-<script src="https://cdn.bootcss.com/Swiper/4.2.6/js/swiper.js"></script>
+<script src="js/jquery.dlmenu.js"></script>
+<script src="js/pagetransitions.js"></script>
 <script>
-    var mySwiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        loop: false,
-        mousewheel: true,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'progressbar',
-            renderProgressbar: function (progressbarFillClass) {
-                return '<span style="background:black" class="' + progressbarFillClass + '"></span>';
-            }
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+
+    $("#iterateEffects").click(function () {
+        if($(".pt-triggers").hasClass("next-page")){
+            $(".pt-triggers").removeClass("next-page");
+        }else {
+            $(".pt-triggers").addClass("next-page");
         }
+    })
+
+    $(".l_img").on('click',function(){
+        location.href = "detail.html"
     })
 </script>
 </body>
