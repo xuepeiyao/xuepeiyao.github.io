@@ -16,6 +16,12 @@ html {
     margin: 0;
     padding: 0
 }
+a{
+    color: black;
+}
+a:hover{
+    color: #9b9b9b;
+}
 
 body {
     left: 0;
@@ -210,7 +216,7 @@ body {
 }
 
 .pt-page.pt-page-2 .page_info img {
-    width: 8rem;
+    width: 6rem;
 }
 
 .pt-page.pt-page-2 .page_about {
@@ -428,5 +434,5 @@ body {
     width: 5rem;
 }
 .copyright_img{
-    width: 8rem;
+    width: 6rem;
 }
