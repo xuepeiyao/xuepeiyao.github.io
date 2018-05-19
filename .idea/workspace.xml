@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="7bd3c11b-b2f9-40f9-b9cf-0235c740fe3a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/css/component.css" afterPath="$PROJECT_DIR$/css/component.css" />
       <change beforePath="$PROJECT_DIR$/css/merge.min.css" afterPath="$PROJECT_DIR$/css/merge.min.css" />
+      <change beforePath="$PROJECT_DIR$/detail.html" afterPath="$PROJECT_DIR$/detail.html" />
+      <change beforePath="$PROJECT_DIR$/images/Group.png" afterPath="$PROJECT_DIR$/images/Group.png" />
+      <change beforePath="$PROJECT_DIR$/images/Group2.png" afterPath="$PROJECT_DIR$/images/Group2.png" />
+      <change beforePath="$PROJECT_DIR$/images/banquan.png" afterPath="$PROJECT_DIR$/images/banquan.png" />
+      <change beforePath="$PROJECT_DIR$/images/instagram-2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/images/weibo.png" afterPath="$PROJECT_DIR$/images/weibo.png" />
+      <change beforePath="$PROJECT_DIR$/images/weixin.png" afterPath="$PROJECT_DIR$/images/weixin.png" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,9 +29,16 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="410">
+              <caret line="243" column="64" lean-forward="false" selection-start-line="243" selection-start-column="64" selection-end-line="243" selection-end-column="64" />
+              <folding>
+                <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#6;n#div#4;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,23 +53,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="475">
+              <caret line="89" column="25" lean-forward="false" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
               <folding>
-                <marker date="1526660291370" expanded="true" signature="2639:2655" ph="..." />
+                <element signature="n#style#0;n#img#0;n#i#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1526741281753" expanded="true" signature="3109:3125" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="merge.min.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="merge.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/merge.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state relative-caret-position="615">
+              <caret line="306" column="1" lean-forward="true" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -62,8 +79,8 @@
       <file leaf-file-name="component.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="128" selection-end-column="1" />
+            <state relative-caret-position="240">
+              <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="2" selection-end-line="128" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -73,26 +90,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>20px</find>
-      <find>.xpy_index .xpy_right_page .xpy_nav .nav_item</find>
-      <find>.pt-triggers</find>
-      <find>xpy_left_page</find>
-      <find>.xpy_index .xpy_right_page .xpy_cont_page .cont_list .l_item span</find>
-      <find>butto</find>
-      <find>xpy_cont_page</find>
-      <find>.pt-touch-button</find>
-      <find>pt-touch-button</find>
-      <find>iterateEffects.xpy_index .xpy_right_page .xpy_nav</find>
-      <find>$iterate</find>
-      <find>.xpy_index .xpy_right_page</find>
-      <find>.xpy_index .xpy_right_page .xpy_nav</find>
-      <find>.pt-triggers.next-page .pt-touch-button</find>
-      <find>.pt-page.pt-page-2 .page_about</find>
-      <find>.sdel-page .page_info</find>
-      <find>.sdel-page .swiper-container</find>
-      <find>.sdel-page .close-page</find>
       <find>.xpy_index .xpy_right_page .xpy_cont_page .cont_list .l_item</find>
+      <find>.xpy_index .xpy_left_page</find>
       <find>.xpy_index .xpy_right_page .xpy_cont_page</find>
+      <find>xpy_cont_page</find>
+      <find>xpy_left_page</find>
+      <find>group</find>
+      <find>images/banquan.png</find>
+      <find>touch</find>
+      <find>about_me</find>
+      <find>.xpy_index .xpy_right_page .xpy_nav .nav_item</find>
+      <find>url(&quot;./images/left_btn.png&quot;)</find>
+      <find>hov</find>
+      <find>xpy_t_left_page</find>
+      <find>.pt-touch-button.about_me</find>
+      <find>.xpy_t_left_page em.em_pei img</find>
+      <find>.pt-touch-button</find>
+      <find>.pt-touch-button.to_index</find>
+      <find>.pt-page.pt-page-2 .page_about img.tuxiang</find>
+      <find>.pt-page.pt-page-2 .page_info</find>
+      <find>微信</find>
+      <find>.sdel-page .del_page .tedx-s14</find>
+      <find>img</find>
+      <find>.sdel-page .del_page.del-text</find>
+      <find>del-del clearfix</find>
+      <find>.sdel-page .swiper-container</find>
+      <find>.sdel-page .swiper-pagination.swiper-pagination-progressbar</find>
+      <find>dis</find>
+      <find>close</find>
+      <find>close-page</find>
+      <find>$(&quot;#dirSpan&quot;).textconsole.log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,11 +128,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/detail.html" />
-        <option value="$PROJECT_DIR$/css/component.css" />
         <option value="$PROJECT_DIR$/js/pagetransitions.js" />
+        <option value="$PROJECT_DIR$/css/component.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/merge.min.css" />
+        <option value="$PROJECT_DIR$/detail.html" />
       </list>
     </option>
   </component>
@@ -147,6 +174,11 @@
               <item name="xuepeiyao.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="xuepeiyao.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuepeiyao.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xuepeiyao.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="font" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xuepeiyao.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -197,18 +229,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526651833571</updated>
-      <workItem from="1526651834947" duration="12173000" />
+      <workItem from="1526651834947" duration="22904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12173000" />
+    <option name="totallyTimeSpent" value="22904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="22" width="1628" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21375921" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21375921" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -238,14 +270,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="128" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/pagetransitions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
@@ -254,29 +278,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="240">
+          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="2" selection-end-line="128" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detail.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="410">
+          <caret line="243" column="64" lean-forward="false" selection-start-line="243" selection-start-column="64" selection-end-line="243" selection-end-column="64" />
           <folding>
-            <marker date="1526660291370" expanded="true" signature="2639:2655" ph="..." />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#6;n#div#4;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/merge.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+        <state relative-caret-position="615">
+          <caret line="306" column="1" lean-forward="true" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="89" column="25" lean-forward="false" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#i#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1526741281753" expanded="true" signature="3109:3125" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

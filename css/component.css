@@ -121,12 +121,12 @@ html, body { height: 100%; }
 	display: block;
 }
 
-.pt-touch-button {
-	background:#fff url("../images/Group.png") left center no-repeat ;background-size: 72px;outline: none;
-}
-.pt-triggers.next-page .pt-touch-button {
-	background:#000 url("../images/Group2.png") right center no-repeat ;background-size: 68px;outline: none;
-}
+/*.pt-touch-button {*/
+	/*!*background: url("../images/Group.png") left center no-repeat ;background-size: 4rem;outline: none;*!*/
+/*}*/
+/*.pt-triggers.next-page .pt-touch-button {*/
+	/*!*background:#000 url("../images/Group2.png") right center no-repeat ;background-size: 68px;outline: none;*!*/
+/*}*/
 
 .pt-triggers .dl-menuwrapper button {
 	margin-bottom: 0;

@@ -12,13 +12,13 @@
 </head>
 <body>
 <div class="sdel-page">
-    <div class="page_info"><img src="images/banquan.png" /></div>
+    <!--<div class="page_info"><img src="images/banquan.png" /></div>-->
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide blue-slide">
                 <div class="del_page del-text">
                     <div class="tedx">TEDx XI’AN</div>
-                    <div class="tedx-s14">
+                    <div class="tedx-s">
                         TEDxXi’an是一个非营利的公益性组织，自己有幸成为其中的一名志愿者，负责大会的整体的视觉海报及延伸品，视觉组的小伙伴都很有才，各尽其能，在这个大家庭里，没有甲方的干预，可以大胆的解放天性，大开脑洞。
                     </div>
                     <div class="tedx-s">TEDxXi'an is a nonprofit public service organization, have the opportunity to become a volunteer yourself which, overall visual poster and extension products, a small group of partners in charge of the General Assembly of the visual is very talented, do their best, in this family, no party intervention can boldly liberate nature, wide open brain hole.</div>
@@ -31,6 +31,13 @@
                 </div>
             </div>
             <div class="swiper-slide orange-slide">Slide 3</div>
+            <div class="swiper-slide red-slide">
+                <div class="del-del clearfix">
+                    <div class="del-i-img fl"><img src="images/imageOne.png"></div>
+                    <div class="del-i-img fl"><img src="images/imageTwo.png"></div>
+                </div>
+            </div>
+            <div class="swiper-slide orange-slide">Slide 4</div>
         </div>
 
         <div class="swiper-pagination"></div>
@@ -40,7 +47,9 @@
 
     </div>
     <div class="close-page">
-        <div class="close"><i>X</i></div>
+        <div class="close">
+            <i><img id="close_btn" style="width: 1rem;" src="./images/close.png" alt=""></i>
+        </div>
     </div>
 
 </div>
@@ -67,6 +76,36 @@
         location.href = "index.html"
     })
 
+    $(function () {
+        var lastX = 0;
+        var flag = false;
+        $("body").mousemove(function(e) {
+            if(flag) return;
+                if (lastX > e.pageX) {
+                    flag = true;
+                    // console.log("←");
+                    mySwiper.slidePrev();
+                    setTimeout(function () {
+                        flag = false;
+                    },400)
+                } else if (lastX < e.pageX) {
+                    flag = true;
+                    // console.log("→");
+                    mySwiper.slideNext();
+                    setTimeout(function () {
+                        flag = false;
+                    },400)
+                } else {
+                    flag = true;
+                    setTimeout(function () {
+
+                        flag = false;
+                    },400)
+                }
+                lastX = e.pageX;
+
+        });
+    })
 
 </script>
 </body>
