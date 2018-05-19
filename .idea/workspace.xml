@@ -4,9 +4,6 @@
     <list default="true" id="7bd3c11b-b2f9-40f9-b9cf-0235c740fe3a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/css/merge.min.css" afterPath="$PROJECT_DIR$/css/merge.min.css" />
-      <change beforePath="$PROJECT_DIR$/detail.html" afterPath="$PROJECT_DIR$/detail.html" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/pagetransitions.js" afterPath="$PROJECT_DIR$/js/pagetransitions.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="158" column="9" lean-forward="true" selection-start-line="158" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
+            <state relative-caret-position="90">
+              <caret line="6" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -55,8 +52,8 @@
       <file leaf-file-name="merge.min.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/merge.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="78" column="23" lean-forward="false" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+            <state relative-caret-position="165">
+              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -80,18 +77,22 @@
       <find>.xpy_index .xpy_right_page .xpy_nav .nav_item</find>
       <find>.pt-triggers</find>
       <find>xpy_left_page</find>
-      <find>.xpy_index .xpy_right_page .xpy_cont_page .cont_list .l_item</find>
       <find>.xpy_index .xpy_right_page .xpy_cont_page .cont_list .l_item span</find>
       <find>butto</find>
       <find>xpy_cont_page</find>
-      <find>.xpy_index .xpy_right_page .xpy_cont_page</find>
       <find>.pt-touch-button</find>
       <find>pt-touch-button</find>
-      <find>.xpy_index .xpy_right_page .xpy_nav</find>
       <find>iterateEffects.xpy_index .xpy_right_page .xpy_nav</find>
       <find>$iterate</find>
-      <find>.pt-triggers.next-page .pt-touch-button</find>
       <find>.xpy_index .xpy_right_page</find>
+      <find>.xpy_index .xpy_right_page .xpy_nav</find>
+      <find>.pt-triggers.next-page .pt-touch-button</find>
+      <find>.pt-page.pt-page-2 .page_about</find>
+      <find>.sdel-page .page_info</find>
+      <find>.sdel-page .swiper-container</find>
+      <find>.sdel-page .close-page</find>
+      <find>.xpy_index .xpy_right_page .xpy_cont_page .cont_list .l_item</find>
+      <find>.xpy_index .xpy_right_page .xpy_cont_page</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -196,12 +197,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526651833571</updated>
-      <workItem from="1526651834947" duration="8197000" />
+      <workItem from="1526651834947" duration="12173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8197000" />
+    <option name="totallyTimeSpent" value="12173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="22" width="1628" height="1028" extended-state="6" />
@@ -237,16 +238,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <marker date="1526660291370" expanded="true" signature="2639:2655" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -265,16 +256,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="158" column="9" lean-forward="true" selection-start-line="158" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
+        <state relative-caret-position="90">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <marker date="1526660291370" expanded="true" signature="2639:2655" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/merge.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="78" column="23" lean-forward="false" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+        <state relative-caret-position="165">
+          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
           <folding />
         </state>
       </provider>
