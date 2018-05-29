@@ -32,7 +32,7 @@ body {
 }
 
 .xpy_index .xpy_left_page {
-    width: 15rem;
+    width: 20%;
     border-right: 1px solid #000;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -77,7 +77,7 @@ body {
 }
 
 .xpy_index .xpy_right_page {
-    width: 62rem;
+    width: 80%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -87,14 +87,14 @@ body {
 }
 
 .xpy_index .xpy_right_page .xpy_nav {
-    width: 9rem;
+    width: 15%;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
     margin-top: 18rem;
     /*height: 150px*/
-    margin-left: 6.1rem;
+    margin-left: 4rem;
 }
 
 .xpy_index .xpy_right_page .xpy_nav .nav_item {
@@ -127,10 +127,10 @@ body {
 
 .xpy_index .xpy_right_page .xpy_cont_page {
     padding-top: 5rem;
-    width: 38rem;
+    width: 75%;
     /*left: 16rem;*/
     right: -.6rem;
-    height: 65em;
+    height: 100%;
     position: absolute;
     top: 0rem;
     bottom: 0;
