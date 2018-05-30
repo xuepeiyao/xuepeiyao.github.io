@@ -54,8 +54,8 @@ body {
     text-align: center
 }
 .xpy_index .xpy_left_page em.em_pei img{
-    height: 11rem;
-    width: 8rem;
+    height: 50%;
+    width: 50%;
 }
 
 .xpy_index .xpy_left_page .go_left_page {
@@ -82,7 +82,7 @@ body {
     top: 0;
     bottom: 0;
     right: 0;
-    left: 10rem;
+    left: 20%;
     height: 100%
 }
 
@@ -94,7 +94,7 @@ body {
     margin: auto;
     margin-top: 18rem;
     /*height: 150px*/
-    margin-left: 4rem;
+    margin-left: 5%;
 }
 
 .xpy_index .xpy_right_page .xpy_nav .nav_item {
@@ -329,8 +329,7 @@ body {
     height: 92%;
     position: absolute;
     bottom: 1.5rem;
-    left: 2rem;
-    right: 2rem;
+    padding: 0 2rem;
 }
 
 .sdel-page .swiper-pagination.swiper-pagination-progressbar {
@@ -419,7 +418,7 @@ body {
     background: url(../images/Group.png) left center no-repeat;
     background-size: 4rem;
     position: absolute;
-    top: 27rem;
+    top: 58%;
     left: 1rem;
     width: 5rem;
     font-size: .7rem;
@@ -434,5 +433,5 @@ body {
     width: 5rem;
 }
 .copyright_img{
-    width: 6rem;
+    width: 37%;
 }
