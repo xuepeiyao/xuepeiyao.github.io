@@ -4,40 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
     <link href="https://cdn.bootcss.com/Swiper/4.2.6/css/swiper.min.css" rel="stylesheet">
 
     <title>Agnes</title>
     <link rel="stylesheet" href="css/merge.min.css">
 </head>
 <body>
-<div class="sdel-page">
+<div class="sdel-page" id="main">
     <!--<div class="page_info"><img src="images/banquan.png" /></div>-->
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide blue-slide">
                 <div class="del_page del-text">
-                    <div class="tedx">TEDx XI’AN</div>
-                    <div class="tedx-s">
-                        TEDxXi’an是一个非营利的公益性组织，自己有幸成为其中的一名志愿者，负责大会的整体的视觉海报及延伸品，视觉组的小伙伴都很有才，各尽其能，在这个大家庭里，没有甲方的干预，可以大胆的解放天性，大开脑洞。
+                    <div class="tedx" id="title">{{title}}</div>
+                    <div class="tedx-s" id="desC">
+                        {{desC}}
                     </div>
-                    <div class="tedx-s">TEDxXi'an is a nonprofit public service organization, have the opportunity to become a volunteer yourself which, overall visual poster and extension products, a small group of partners in charge of the General Assembly of the visual is very talented, do their best, in this family, no party intervention can boldly liberate nature, wide open brain hole.</div>
+                    <div class="tedx-s" id="desE">
+                        {{desE}}
+                    </div>
                 </div>
             </div>
-            <div class="swiper-slide red-slide">
+            <div class="swiper-slide red-slide" v-for="img of imgs">
                 <div class="del-del clearfix">
-                    <div class="del-i-img fl"><img src="images/imageOne.png"></div>
-                    <div class="del-i-img fl"><img src="images/imageTwo.png"></div>
+                    <div class="del-i-img fl"><img :src="img"></div>
+                    <!--<div class="del-i-img fl"><img src="images/imageTwo.png"></div>-->
                 </div>
             </div>
-            <div class="swiper-slide orange-slide">Slide 3</div>
-            <div class="swiper-slide red-slide">
-                <div class="del-del clearfix">
-                    <div class="del-i-img fl"><img src="images/imageOne.png"></div>
-                    <div class="del-i-img fl"><img src="images/imageTwo.png"></div>
-                </div>
-            </div>
-            <div class="swiper-slide orange-slide">Slide 4</div>
         </div>
 
         <div class="swiper-pagination"></div>
@@ -48,64 +43,108 @@
     </div>
     <div class="close-page">
         <div class="close">
-            <i><img id="close_btn" style="width: 1rem;" src="./images/close.png" alt=""></i>
+            <i><img @click="close()" id="close_btn" style="width: 1rem;" src="./images/close.png" alt=""></i>
         </div>
     </div>
 
 </div>
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="js/detail.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
 <script src="https://cdn.bootcss.com/Swiper/4.2.6/js/swiper.js"></script>
 <script>
-    var mySwiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        loop: false,
-        mousewheel: true,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'progressbar',
-            renderProgressbar: function (progressbarFillClass) {
-                return '<span style="background:black" class="' + progressbarFillClass + '"></span>';
+    var mySwiper;
+    var lastX = 0;
+    var flag = false;
+
+    new Vue({
+        el: "#main",
+        data: {
+            title: "qwe",
+            desC: "",
+            desE: "",
+            imgs: []
+        },
+        mounted: function () {
+            var $this = this;
+            var id = getParam("id");
+            if (id >= 0) {
+                var item = detailData[id]
+                $this.title = item.title;
+                $this.desC = item.descriptionChinese;
+                $this.desE = item.descriptionEnglish;
+                item.imgs.forEach(function (img, i) {
+                    $this.imgs.push(img);
+                })
+                console.log($this.imgs);
+                $this.$nextTick(function () {
+                    $this.swiperInit();
+                    $this.onMouseMove();
+                });
             }
         },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+        methods: {
+            swiperInit: function () {
+                mySwiper = new Swiper('.swiper-container', {
+                    direction: 'horizontal',
+                    loop: false,
+                    mousewheel: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'progressbar',
+                        renderProgressbar: function (progressbarFillClass) {
+                            return '<span style="background:black" class="' + progressbarFillClass + '"></span>';
+                        }
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }
+                });
+            },
+            onMouseMove: function () {
+                document.body.onmousemove = function (e) {
+                    if (flag) return;
+                    if (lastX > e.pageX) {//page go left
+                        flag = true;
+                        mySwiper.slidePrev();
+                        setTimeout(function () {
+                            flag = false;
+                        }, 400)
+                    } else if (lastX < e.pageX) {//page go right
+                        flag = true;
+                        mySwiper.slideNext();
+                        setTimeout(function () {
+                            flag = false;
+                        }, 400)
+                    } else {
+                        flag = true;
+                        setTimeout(function () {
+
+                            flag = false;
+                        }, 400)
+                    }
+                    lastX = e.pageX;
+                }
+            },
+            close: function () {
+                location.href = "index.html";
+            }
         }
     });
-    $(".close").on('click',function(){
-        location.href = "index.html"
-    })
 
-    $(function () {
-        var lastX = 0;
-        var flag = false;
-        $("body").mousemove(function(e) {
-            if(flag) return;
-                if (lastX > e.pageX) {
-                    flag = true;
-                    // console.log("←");
-                    mySwiper.slidePrev();
-                    setTimeout(function () {
-                        flag = false;
-                    },400)
-                } else if (lastX < e.pageX) {
-                    flag = true;
-                    // console.log("→");
-                    mySwiper.slideNext();
-                    setTimeout(function () {
-                        flag = false;
-                    },400)
-                } else {
-                    flag = true;
-                    setTimeout(function () {
 
-                        flag = false;
-                    },400)
-                }
-                lastX = e.pageX;
-
-        });
-    })
+    //取url参数
+    function getParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            if (unescape(r[2]) === "undefined") {
+                return null;
+            }
+            return unescape(r[2]);
+        }
+        return null;
+    }
 
 </script>
 </body>

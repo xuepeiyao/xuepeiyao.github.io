@@ -3,12 +3,12 @@ var indexImgs = [
         {
             imgUrl: './images/communication/one/index.png',
             imgTitle: '环境导视系统',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=0'
         },
         {
             imgUrl: './images/communication/two/index.png',
             imgTitle: '捷业独角兽',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=1'
 
         },
         {
