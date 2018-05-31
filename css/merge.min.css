@@ -137,7 +137,8 @@ body {
     /*margin: auto;*/
     /*margin-top: 26%;*/
     overflow-y: auto;
-    overflow-x: hidden
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 
