@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" class="no-js">
+<html lang="zh-cn" class="no-js" xmlns:v-lazy="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,28 +22,45 @@
 <body>
 
 
+<div class="pt-triggers">
+    <!--<button id="iterateEffects" class="pt-touch-button"></button>-->
+</div><!-- /triggers -->
 
-    <div class="pt-triggers">
-        <!--<button id="iterateEffects" class="pt-touch-button"></button>-->
-    </div><!-- /triggers -->
-
-    <div id="pt-main" class="pt-perspective">
-        <div class="pt-page pt-page-1">
-            <div class="xpy_index">
-                <div class="xpy_left_page">
-                    <em class="em_pei"><img id="logo" src="images/page_1.png"/></em>
-                    <div class="page_info"><img class="copyright_img" id="copyright" src="images/banquan.png"/></div>
-                    <button id="about_me" class="pt-touch-button about_me"></button>
-                </div>
-                <div class="xpy_right_page">
-                    <div id="main" style="width: 100%;height: 100%;">
+<div id="pt-main" class="pt-perspective">
+    <div class="pt-page pt-page-1">
+        <div class="xpy_index">
+            <div class="xpy_left_page">
+                <em class="em_pei"><img id="logo" src="images/page_1.png"/></em>
+                <div class="page_info"><img class="copyright_img" id="copyright" src="images/banquan.png"/></div>
+                <button id="about_me" class="pt-touch-button about_me"></button>
+            </div>
+            <div class="xpy_right_page">
+                <div id="main" style="width: 100%;height: 100%;">
                     <div class="xpy_nav">
-                        <div class="nav_item"><a @click="changeIndex(-1)" :class="{a_avtice:curIndex===-1}" id="nav1" href="#">All Work</a></div>
-                        <div class="nav_item"><a @click="changeIndex(0)" :class="{a_avtice:curIndex===0}" id="nav2" href="#">Communication Design</a></div>
-                        <div class="nav_item"><a @click="changeIndex(1)" :class="{a_avtice:curIndex===1}" id="nav3" href="#">UI Design</a></div>
-                        <div class="nav_item"><a @click="changeIndex(2)" :class="{a_avtice:curIndex===2}" id="nav4" href="#">Web Design</a></div>
-                        <div class="nav_item"><a @click="changeIndex(3)" :class="{a_avtice:curIndex===3}" id="nav5" href="#">Poster Design</a></div>
-                        <div class="nav_item"><a @click="changeIndex(4)" :class="{a_avtice:curIndex===4}" id="nav6" href="#">illustration</a></div>
+                        <div class="nav_item">
+                            <a @click="changeIndex(-1)" :class="{a_avtice:curIndex===-1}" id="nav1" href="#">All
+                                Work</a>
+                        </div>
+                        <div class="nav_item">
+                            <a @click="changeIndex(0)" :class="{a_avtice:curIndex===0}" id="nav2"
+                               href="#">Communication Design</a>
+                        </div>
+                        <div class="nav_item">
+                            <a @click="changeIndex(1)" :class="{a_avtice:curIndex===1}" id="nav3"
+                               href="#">UI Design</a>
+                        </div>
+                        <div class="nav_item">
+                            <a @click="changeIndex(2)" :class="{a_avtice:curIndex===2}" id="nav4"
+                               href="#">Web Design</a>
+                        </div>
+                        <div class="nav_item">
+                            <a @click="changeIndex(3)" :class="{a_avtice:curIndex===3}" id="nav5"
+                               href="#">Poster Design</a>
+                        </div>
+                        <div class="nav_item">
+                            <a @click="changeIndex(4)" :class="{a_avtice:curIndex===4}" id="nav6"
+                               href="#">illustration</a>
+                        </div>
                     </div>
 
                     <div class="xpy_cont_page" id="xpy_cont_page">
@@ -51,83 +68,88 @@
                             <div v-for="img of indexImg" class="l_item" v-if="curIndex===index || curIndex===-1">
                                 <div class="l_img"
                                      @click="location.href = img.linkUrl"
-                                     :style="'background:url(\'' + img.imgUrl +'\') no-repeat center center;background-size:contain;cursor: pointer'" ></div>
+                                     v-lazy:background-image="img.imgUrl">
+                                </div>
                                 <span>{{img.imgTitle}}</span>
                             </div>
                             <div style="clear: both"></div>
                         </div>
 
                     </div>
-                    </div>
-                    <div style="clear: both"></div>
                 </div>
+                <div style="clear: both"></div>
             </div>
-        </div>
-        <div class="pt-page pt-page-2">
-            <div class="xpy_t_left_page">
-                <em class="em_pei"><img id="logo2" src="./images/page_1_hover.png"/></em>
-                <button id="to_index" class="pt-touch-button to_index"></button>
-            </div>
-            <div class="page_about">
-                <img class="tuxiang" src="images/touxiang.png">
-                <div class="o-cont">
-                    <h5>about</h5>
-                    <div class="name-r">薛佩瑶/Agnes</div>
-                    <div class="size-18">ui/视觉资深设计师</div>
-                    <h5>work experience</h5>
-                    <div>贺冰凇视觉艺术有限公司</div>
-                    <div>蓝色光标数字营销机构</div>
-                    <div>博达软件股份有限公司</div>
-                    <div>博达软件股份有限公司</div>
-                    <h5>service</h5>
-                    <div>
-                        TEDx Xi’an
-                    </div>
-                    <div>梅赛德斯奔驰</div>
-                    <div>西安城墙</div>
-                    <div> 西安临潼旅游休闲度假区</div>
-                    <div> 华阳景区</div>
-                    <div>西安曲江管委会</div>
-                    <div>西安音乐厅</div>
-                    <div>大连音乐家协会流行音乐学会</div>
-                    <div>长庆石油等</div>
-                    <h5>honor</h5>
-                    <div>大连啤酒节吉祥物优秀奖</div>
-                    <div>第六届全国设计艺术大赛优秀奖</div>
-                    <div>全国艺术院校美术作品大赛三等奖</div>
-                    <h5>contact</h5>
-                    <div class="b-icon">
-                        <a>
-                            <img src="images/weixin.png">
-                        </a>
-                        <a href="https://weibo.com/u/2442047205">
-                            <img src="images/weibo.png">
-                        </a>
-                        <a href="https://www.instagram.com/ohh_agnes">
-                            <img src="images/instagram.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="page_info"><img id="copyright2" src="images/banquan_hover.png"/></div>
-        </div>
-
-        <div class="pt-message">
-            <p>亲，你的浏览器不支持 CSS 动画，请使用 Chrome,Firefox,Safari 等浏览器浏览.</p>
         </div>
     </div>
+    <div class="pt-page pt-page-2">
+        <div class="xpy_t_left_page">
+            <em class="em_pei"><img id="logo2" src="./images/page_1_hover.png"/></em>
+            <button id="to_index" class="pt-touch-button to_index"></button>
+        </div>
+        <div class="page_about">
+            <img class="tuxiang" src="images/touxiang.png">
+            <div class="o-cont">
+                <h5>about</h5>
+                <div class="name-r">薛佩瑶/Agnes</div>
+                <div class="size-18">ui/视觉资深设计师</div>
+                <h5>work experience</h5>
+                <div>贺冰凇视觉艺术有限公司</div>
+                <div>蓝色光标数字营销机构</div>
+                <div>博达软件股份有限公司</div>
+                <div>博达软件股份有限公司</div>
+                <h5>service</h5>
+                <div>
+                    TEDx Xi’an
+                </div>
+                <div>梅赛德斯奔驰</div>
+                <div>西安城墙</div>
+                <div> 西安临潼旅游休闲度假区</div>
+                <div> 华阳景区</div>
+                <div>西安曲江管委会</div>
+                <div>西安音乐厅</div>
+                <div>大连音乐家协会流行音乐学会</div>
+                <div>长庆石油等</div>
+                <h5>honor</h5>
+                <div>大连啤酒节吉祥物优秀奖</div>
+                <div>第六届全国设计艺术大赛优秀奖</div>
+                <div>全国艺术院校美术作品大赛三等奖</div>
+                <h5>contact</h5>
+                <div class="b-icon">
+                    <a>
+                        <img src="images/weixin.png">
+                    </a>
+                    <a href="https://weibo.com/u/2442047205">
+                        <img src="images/weibo.png">
+                    </a>
+                    <a href="https://www.instagram.com/ohh_agnes">
+                        <img src="images/instagram.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page_info"><img id="copyright2" src="images/banquan_hover.png"/></div>
+    </div>
 
+    <div class="pt-message">
+        <p>亲，你的浏览器不支持 CSS 动画，请使用 Chrome,Firefox,Safari 等浏览器浏览.</p>
+    </div>
+</div>
 
+<script src="https://cdn.bootcss.com/vue-lazyload/1.2.3/vue-lazyload.js"></script>
 <script src="js/data.js"></script>
 <script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
 <script src="js/jquery.dlmenu.js"></script>
 <script src="js/pagetransitions.js"></script>
 <script>
 
+    Vue.use(VueLazyload);
+    Vue.use(VueLazyload, {
+        preLoad: 1.3,
+        error: 'dist/error.png',
+        loading: 'dist/loading.gif',
+        attempt: 2
+    });
 
-    $(".l_img").on('click', function () {
-        location.href = "detail.html"
-    })
     $(".xpy_left_page").mouseover(function () {
         $("#logo").attr('src', './images/page_1_hover.png');
         $("#about_me").css("background-image", "url(./images/Group_hover.png)");
@@ -142,115 +164,30 @@
     });
     $(".xpy_t_left_page").mousemove(function () {
         $("#logo2").attr('src', './images/page_1.png');
-        // $("#to_index").css("background-image","./images/Group2_hover.png");
         $("#to_index").css("background-image", "url(./images/Group2_hover.png)");
         $("#copyright2").attr('src', './images/banquan.png');
     });
     $(".xpy_t_left_page").mouseout(function () {
         $("#copyright2").attr('src', './images/banquan_hover.png');
         $("#to_index").css("background-image", "url(./images/Group2.png)");
-        // $("to_index").css("background-image","./images/Group2.png");
         $("#logo2").attr('src', './images/page_1_hover.png');
     });
 
-    // $("#nav2").click(function () {
-    //     $('#xpy_cont_page').animate({
-    //             scrollTop: 1000
-    //         },
-    //         1000);
-    // })
-    function renderImg(num) {
-        $(".l_img").each(function (i, item) {
-            $(".cont_list").append();
-            console.log(imgs[num][i])
-            $(item).css("background-image", "url(" + imgs[num][i] + ")");
-        });
-        // for(var i=0;i<imgs[num].length;i++){
-        //     console.log(imgs[num][i])
-        //     var htmlPtl = "<div class=\"l_item\">" +
-        //         "                            <div class=\"l_img\" style=\"background-image:url(./images/index_img1.png) background-size:cover;cursor: pointer\"></div>" +
-        //         "                            <span>华阳景区</span>" +
-        //         "                        </div>";
-        //     // $(item).css("background-image", "url("+imgs[num][i]+")");
-        //     $("#cont_list").append(htmlPtl);
-        // }
-    }
 
     $("a").click(function () {
         $("a").removeClass("a_avtice");
         $(this).addClass("a_avtice");
-        console.log(this.id)
-        var _index = this.id.substr(3)
-        // $(".l_img").each(function (i,item) {
-        //     console.log(imgs[_index-1][i])
-        //     $(item).css("background-image", "url("+imgs[_index-1][i]+")");
-        //
-        // });
-        renderImg(_index - 1)
     });
-    $(function () {
-        // renderImg(0)
-    })
 
-    var imgs = [
-        [
-            "./images/index_img1.png",
-            "./images/index_img3.png",
-            "./images/index_img2.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png"
-        ],
-        [
-            "./images/index_img1.png",
-            "./images/index_img2.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png",
-            "./images/index_img3.png",
-            "./images/index_img1.png"
-        ],
-        [
-            "./images/index_img3.png",
-            "./images/index_img2.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png"
-        ],
-        [
-            "./images/index_img2.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png",
-            "./images/index_img3.png",
-            "./images/index_img1.png"
-        ],
-        [
-            "./images/index_img2.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png",
-            "./images/index_img3.png",
-            "./images/index_img1.png"
-        ],
-        [
-            "./images/index_img2.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png",
-            "./images/index_img1.png",
-            "./images/index_img3.png",
-            "./images/index_img1.png"
-        ]
-    ]
     new Vue({
-        el:"#main",
-        data:{
-            test:'asd',
-            indexImgs:indexImgs,
-            curIndex:-1
+        el: "#main",
+        data: {
+            test: 'asd',
+            indexImgs: indexImgs,
+            curIndex: -1
         },
-        methods:{
-            changeIndex:function (cIndex) {
+        methods: {
+            changeIndex: function (cIndex) {
                 this.curIndex = cIndex;
             }
         }

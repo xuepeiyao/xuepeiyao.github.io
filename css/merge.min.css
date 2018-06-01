@@ -154,7 +154,8 @@ body {
 .xpy_index .xpy_right_page .xpy_cont_page .cont_list .l_item .l_img {
     width: 100%;
     height: 10rem;
-    background: #ddd
+    background: #ddd;
+    background: no-repeat center center;background-size:contain;cursor: pointer;
 }
 
 .xpy_index .xpy_right_page .xpy_cont_page .cont_list .l_item span {
