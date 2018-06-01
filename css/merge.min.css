@@ -387,11 +387,19 @@ body {
 
 .sdel-page .del-del .del-i-img {
     width: 80%;
-    margin: 0 20px
+    margin: 0 20px;
+    height: 100%;
+    text-align: center;
 }
 
 .sdel-page .del-del .del-i-img img {
-    width: 100%
+    max-height: 95%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
 }
 
 .fl {

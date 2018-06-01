@@ -91,4 +91,123 @@ var detailData = [
             "./images/communication/seven/10.jpg"
         ]
     },
+    {
+        title: "华阳景区",
+        descriptionChinese: "华阳景区是秦岭山中一座4A及景区，这个项目主要是推端午节华阳当地举办的活动，做的线上线下的一系列数字传播，以当地一些特色为主要元素，有秦岭四宝，30年从来不打农药的大米等，传播量是他们往期的小高潮。",
+        descriptionEnglish: "Huayang resort is Qinling Mountains and a 4A scenic spots, this project is to promote local events Huayang Dragon Boat Festival, a series of numbers to do online and offline communication, with some local specialties as the main element, Qinling four treasures, 30 never fight in rice pesticide, spread to the amount of their spurt.",
+        imgs: [
+            "./images/ui-design/one/1.gif",
+            "./images/ui-design/one/2.gif",
+            "./images/ui-design/one/3.gif",
+            "./images/ui-design/one/4.gif"
+        ]
+    },
+    {
+        title: "西安音乐厅文艺账单h5",
+        descriptionChinese: "西安音乐厅文艺账单倒计时h5，与支付宝的年度账单有异曲同工之意，根据音乐厅的品牌属性，选用了世界名画与现代科技和场景进行拼接，形成蒙太奇手法，丰富了表现力，增强观者的感染性。",
+        descriptionEnglish: "Xi 'an concert hall literary bills countdown h5, and alipay annual bills have different meaning, the brand property, according to the concert hall chose world famous paintings with modern science and technology and the scene splicing, form a montage, enriched the expressive force, strengthen the viewer infectious.",
+        imgs: [
+            "./images/ui-design/two/1.png"
+        ]
+    },
+    {
+        title: "长安嘿帮",
+        descriptionChinese: "长安嘿帮是一个媒体公众号，旨在复兴古城新青年文化计划，做了整体的品牌视觉系统，logo即是眼睛的意思，还有领域、地域的意思，传播古城西安不一样的声音。",
+        descriptionEnglish: "Changan hey help is a media to the public, to plan to revive the ancient city of new youth culture, make the overall brand vision system, the logo is the meaning of the eyes, and field, the meaning of geographical, spread the ancient city of xi 'an is not the same.",
+        imgs: [
+            "./images/ui-design/three/1.png",
+            "./images/ui-design/three/2.png"
+        ]
+    },
+    {
+        title: "D.E.A.L",
+        descriptionChinese: "凡生素影是一家专门拍肖像的专业摄影机构，这个项目是为摄影机构开发微信小程序的一个线上预约、下单，提供服务与展示作品的一个窗口。<br>" +
+        "用户可以通过小程序选择自己需要的套系，查看详情，并能预约下单，进行购买服务。",
+        descriptionEnglish: "D.E.A.L is one of the best portrait professional photography agency, this project is for photography organization development micro letter small program of an online reservation, order, provide service and display a window. The user can select the set system that he needs through the small program, check the details, and can make an appointment to order and purchase the service." +
+        "<br>设计思考:此摄影机构的装修风格及调性是以黑白灰的极简北欧风为住，所以设计的方向及颜色的选用也采用简洁、清晰、主次分明的线框与黑白灰的主色调，统一视觉形象，加深对品牌的记忆。图标:轻量化、统一性、易识别。页面减少不必要的元素，保持干净清晰。\n" +
+        "同时突出品牌的极简概念，去繁从简，去除引导页，直接展示主要产品。",
+        imgs: [
+            "./images/ui-design/four/1.png",
+            "./images/ui-design/four/2.png"
+        ]
+    },
+    {
+        title: "飞跃大西安",
+        descriptionChinese: "西安城墙五一吉尼斯，千架无人机营销活动h5，通过无人机飞行碰撞宝藏，赢得活动奖励，并绘制了西安城墙极具代表性的建筑为障碍物，通过游戏互动，让市民参与到活动中。",
+        descriptionEnglish: "Xi 'an city wall May Day guinness, thousand drone h5 marketing activities, and through the unmanned aerial vehicle (uav) flight collision treasure, award winning activity, and draw the obstacles for xi 'an city wall is extremely representative buildings, through the interactive game, let the citizens to participate in the activities.",
+        imgs: [
+            "./images/ui-design/five/1.png",
+            "./images/ui-design/five/2.png",
+            "./images/ui-design/five/2.png"
+        ]
+    },
+    {
+        title: "博达官网",
+        descriptionChinese: "博达官网作为公司形象展示、宣传品牌的重要窗口，从策划，到设计，耗时半年，针对各个行业和行业的解决方案进行每个界面的设计，内容量庞大，系统繁杂，设计的同时也考虑到交互与实现效果，加强了自己的ui设计与产品设计思路和流程",
+        descriptionEnglish: "china webber as an important window company image display, promotion brand, from planning, design, spent half a year, according to various industries and the solution for the design of each interface of the industry, large in capacity, the system complex, design as well as considering the interaction and implementation effect, strengthens own UI design and product design and process.",
+        imgs: [
+            "./images/web/one/1.png",
+            "./images/web/one/2.png",
+            "./images/web/one/3.png",
+            "./images/web/one/4.png",
+            "./images/web/one/5.png",
+            "./images/web/one/6.png",
+            "./images/web/one/7.jpg"
+        ]
+    },
+    {
+        title: "天津大学教师个人主页",
+        descriptionChinese: "",
+        descriptionEnglish: "",
+        imgs: [
+            "./images/web/two/1.png"
+        ]
+    },
+    {
+        title: "西安音乐厅乐团",
+        descriptionChinese: "",
+        descriptionEnglish: "",
+        imgs: [
+            "./images/web/three/1.jpg",
+            "./images/web/three/2.jpg",
+            "./images/web/three/3.jpg",
+            "./images/web/three/4.jpg",
+            "./images/web/three/5.jpg"
+        ]
+    },
+    {
+        title: "西安城墙海报",
+        descriptionChinese: "西安城墙的环境改造以大胆跳跃的蓝黄色调为主旋律，提升因采光不足带来的心情烦躁等问题，依照城墙的口号，尊重、复兴、热爱，表达西安城墙景区即尊重历史，发扬传统文化，同时又与国际的现代化相结合，体现城墙景区肩负责任，传承创新，追求卓越，共同发展的理念特征。",
+        descriptionEnglish: "Environmental transformation Xi'an city wall with a bold leap of blue and yellow as the theme tune to improve due to insufficient lighting brings feelings of irritability and other issues, according to the slogan of walls, respect, revival, love, expressing respect for the history of Xi'an City resorts, carry forward the traditional culture, while combining modern and international, reflecting the city wall scenic shoulder responsibility, inheritance and innovation, the pursuit of excellence and common development of the concept features",
+        imgs: [
+            "./images/poster-design/one/1.jpg",
+            "./images/poster-design/one/2.jpg",
+            "./images/poster-design/one/3.jpg",
+            "./images/poster-design/one/4.jpg",
+            "./images/poster-design/one/5.jpg",
+            "./images/poster-design/one/6.jpg",
+            "./images/poster-design/one/7.jpg",
+            "./images/poster-design/one/8.jpg",
+            "./images/poster-design/one/9.jpg"
+        ]
+    },
+    {
+        title: "海报",
+        descriptionChinese: "",
+        descriptionEnglish: "",
+        imgs: [
+            "./images/poster-design/two/1.jpg",
+            "./images/poster-design/two/2.jpg"
+        ]
+    },
+    {
+        title: "我是赫拉话剧海报",
+        descriptionChinese: "课题是一部由西安戏剧中心推出的首部启蒙话剧，我是赫拉，为了让孕期的产妇以轻松快乐的心情迎接新生儿的到来，认为怀孕是快乐的事儿，不是什么病，所以形象以挺着大肚子的孕妇欢快的跳着小苹果，来体现即将将临的准妈妈的喜悦和无忧的保障。",
+        descriptionEnglish: "Issue is a Xi'an Drama Center launched the first section of enlightenment drama, I was Hera, in order to allow pregnant mothers to relaxed and happy mood to greet the arrival of the newborn that pregnancy is a happy thing, not a disease, so the image to pregnant women belly dancing cheerful small apples, to reflect the joy and worry-free security upcoming Advent of mothers.",
+        imgs: [
+            "./images/poster-design/three/1.jpg",
+            "./images/poster-design/three/2.jpg",
+            "./images/poster-design/three/3.jpg"
+        ]
+    }
 ];

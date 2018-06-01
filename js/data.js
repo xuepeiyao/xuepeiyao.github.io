@@ -45,63 +45,62 @@ var indexImgs = [
         {
             imgUrl: './images/ui-design/one/index.png',
             imgTitle: '华阳景区',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=7'
         },
         {
             imgUrl: './images/ui-design/two/index.png',
             imgTitle: '西安音乐厅文艺账单',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=8'
         },
         {
             imgUrl: './images/ui-design/three/index.png',
             imgTitle: '长安嘿帮',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=9'
         },
         {
             imgUrl: './images/ui-design/four/index.png',
             imgTitle: 'D.E.A.L',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=10'
         },
 
         {
             imgUrl: './images/ui-design/five/index.png',
             imgTitle: '飞跃大西安',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=11'
         }
-
     ],
     [
         {
             imgUrl: './images/web/one/index.png',
             imgTitle: '博达官网',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=12'
         },
         {
             imgUrl: './images/web/two/index.png',
             imgTitle: '天津大学教师个人主页',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=13'
         },
         {
             imgUrl: './images/web/three/index.png',
             imgTitle: '西安音乐厅乐团',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=14'
         }
     ],
     [
         {
             imgUrl: './images/poster-design/one/index.png',
-            imgTitle: '城墙海报',
-            linkUrl: 'detail.html'
+            imgTitle: '西安城墙海报',
+            linkUrl: 'detail.html?id=15'
         },
         {
             imgUrl: './images/poster-design/two/index.png',
             imgTitle: '海报',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=16'
         },
         {
             imgUrl: './images/poster-design/three/index.png',
-            imgTitle: '我是赫拉',
-            linkUrl: 'detail.html'
+            imgTitle: '我是赫拉话剧海报',
+            linkUrl: 'detail.html?id=17'
         }
     ]
 
