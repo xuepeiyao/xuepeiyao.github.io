@@ -14,31 +14,31 @@ var indexImgs = [
         {
             imgUrl: './images/communication/three/index.png',
             imgTitle: '空指针乐队',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=2'
 
         },
         {
             imgUrl: './images/communication/four/index.png',
             imgTitle: '像素小人',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=3'
 
         },
         {
             imgUrl: './images/communication/five/index.png',
             imgTitle: '壹庐茶社',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=4'
 
         },
         {
             imgUrl: './images/communication/six/index.png',
             imgTitle: 'TED X',
-            linkUrl: 'detail.html',
+            linkUrl: 'detail.html?id=5'
 
         },
         {
             imgUrl: './images/communication/seven/index.png',
             imgTitle: '宏欣教育',
-            linkUrl: 'detail.html'
+            linkUrl: 'detail.html?id=6'
         }
     ],
     [

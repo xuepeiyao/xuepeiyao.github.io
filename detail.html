@@ -59,7 +59,7 @@
     new Vue({
         el: "#main",
         data: {
-            title: "qwe",
+            title: "",
             desC: "",
             desE: "",
             imgs: []
@@ -78,7 +78,7 @@
                 console.log($this.imgs);
                 $this.$nextTick(function () {
                     $this.swiperInit();
-                    $this.onMouseMove();
+                    // $this.onMouseMove();
                 });
             }
         },
