@@ -102,6 +102,63 @@ var indexImgs = [
             imgTitle: '我是赫拉话剧海报',
             linkUrl: 'detail.html?id=17'
         }
+    ],
+    [
+        {
+            imgUrl: './images/illustion/1_index.png',
+            imgTitle: '插画',
+            linkUrl: 'detail.html?id=18'
+        },
+        {
+            imgUrl: './images/illustion/2_index.png',
+            imgTitle: '插画',
+            linkUrl: 'detail.html?id=19'
+        },
+        {
+            imgUrl: './images/illustion/3_index.png',
+            imgTitle: '插画',
+            linkUrl: 'detail.html?id=20'
+        },
+        {
+            imgUrl: './images/illustion/4_index.png',
+            imgTitle: '插画',
+            linkUrl: 'detail.html?id=21'
+        },
+        {
+            imgUrl: './images/illustion/5_index.png',
+            imgTitle: '插画',
+            linkUrl: 'detail.html?id=22'
+        },
+        {
+            imgUrl: './images/illustion/6_index.png',
+            imgTitle: '插画',
+            linkUrl: 'detail.html?id=23'
+        },
+        {
+            imgUrl: './images/illustion/7_index.png',
+            imgTitle: '插画',
+            linkUrl: 'detail.html?id=24'
+        },
+        {
+            imgUrl: './images/illustion/8_index.png',
+            imgTitle: '插画',
+            linkUrl: 'detail.html?id=25'
+        },
+        {
+            imgUrl: './images/illustion/9_index.png',
+            imgTitle: '插画',
+            linkUrl: 'detail.html?id=26'
+        },
+        {
+            imgUrl: './images/illustion/10_index.png',
+            imgTitle: '插画',
+            linkUrl: 'detail.html?id=27'
+        },
+        {
+            imgUrl: './images/illustion/11_index.png',
+            imgTitle: '插画',
+            linkUrl: 'detail.html?id=28'
+        },
     ]
 
 ]
