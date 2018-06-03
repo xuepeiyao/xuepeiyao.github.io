@@ -179,7 +179,7 @@ body {
 .xpy_t_left_page {
     position: absolute;
     right: 0;
-    width: 15rem;
+    width: 18%;
     top: 0;
     bottom: 0;
     border-left: 1px solid #fff;
@@ -197,17 +197,17 @@ body {
 }
 
 .xpy_t_left_page em.em_pei img {
-    width: 7.6rem;
+    width: 50%;
+    height: 50%;
 }
 
 .pt-page.pt-page-2 .page_info {
     position: absolute;
     top: auto;
     bottom: 2rem;
-    /*left: 2.3rem;*/
-    right: 3rem;
-
-    text-align:center;
+    text-align: center;
+    left: 0;
+    right: 0
 }
 
 .sdel-page, .sdel-page .close-page, .sdel-page .close-page .close {
@@ -218,7 +218,7 @@ body {
 }
 
 .pt-page.pt-page-2 .page_info img {
-    width: 6rem;
+    width: 37%;
 }
 
 .pt-page.pt-page-2 .page_about {
@@ -394,6 +394,7 @@ body {
 }
 
 .sdel-page .del-del .del-i-img img {
+    max-width: 95%;
     max-height: 95%;
     position: absolute;
     left: 0;
@@ -433,7 +434,7 @@ body {
     position: absolute;
     top: 58%;
     left: 1rem;
-    width: 5rem;
+    width: 35%;
     font-size: .7rem;
     height: 1rem;
 }
@@ -441,9 +442,9 @@ body {
     background: url(../images/Group2.png) left center no-repeat;
     background-size: 4rem;
     position: absolute;
-    top: 25.3rem;
+    top: 58%;
     right: 1rem;
-    width: 5rem;
+    width: 35%;
 }
 .copyright_img{
     width: 37%;
