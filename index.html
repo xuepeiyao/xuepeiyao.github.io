@@ -11,8 +11,6 @@
     <link rel="stylesheet" type="text/css" href="css/component.css"/>
     <link rel="stylesheet" type="text/css" href="css/animations.css"/>
     <link rel="stylesheet" href="css/merge.min.css">
-    <script src="js/modernizr.custom.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <style>
         .a_avtice {
             color: #9b9b9b
@@ -20,11 +18,6 @@
     </style>
 </head>
 <body>
-
-
-<div class="pt-triggers">
-    <!--<button id="iterateEffects" class="pt-touch-button"></button>-->
-</div><!-- /triggers -->
 
 <div id="pt-main" class="pt-perspective">
     <div class="pt-page pt-page-1">
@@ -64,8 +57,19 @@
                     </div>
 
                     <div class="xpy_cont_page" id="xpy_cont_page">
-                        <div v-for="(indexImg,index) of indexImgs" class="cont_list">
-                            <div v-for="img of indexImg" class="l_item" v-if="curIndex===index || curIndex===-1">
+                        <div v-for="(indexImg,index) of allImgs" class="cont_list">
+                            <div v-for="img of indexImg" class="l_item" v-if="curIndex===index && curIndex!==-1">
+                                <div class="l_img"
+                                     @click="location.href = img.linkUrl"
+                                     v-lazy:background-image="img.imgUrl">
+                                </div>
+                                <span>{{img.imgTitle}}</span>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+
+                        <div class="cont_list">
+                            <div v-for="(img,index) of allImgs" class="l_item" v-if="curIndex===-1">
                                 <div class="l_img"
                                      @click="location.href = img.linkUrl"
                                      v-lazy:background-image="img.imgUrl">
@@ -84,6 +88,7 @@
     <div class="pt-page pt-page-2">
         <div class="xpy_t_left_page">
             <em class="em_pei"><img id="logo2" src="./images/page_1_hover.png"/></em>
+            <div class="page_info"><img class="copyright_img" id="copyright2" src="images/banquan_hover.png"/></div>
             <button id="to_index" class="pt-touch-button to_index"></button>
         </div>
         <div class="page_about">
@@ -95,7 +100,6 @@
                 <h5>work experience</h5>
                 <div>贺冰凇视觉艺术有限公司</div>
                 <div>蓝色光标数字营销机构</div>
-                <div>博达软件股份有限公司</div>
                 <div>博达软件股份有限公司</div>
                 <h5>service</h5>
                 <div>
@@ -127,14 +131,14 @@
                 </div>
             </div>
         </div>
-        <div class="page_info"><img id="copyright2" src="images/banquan_hover.png"/></div>
     </div>
 
     <div class="pt-message">
         <p>亲，你的浏览器不支持 CSS 动画，请使用 Chrome,Firefox,Safari 等浏览器浏览.</p>
     </div>
 </div>
-
+<script src="js/modernizr.custom.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/vue-lazyload/1.2.3/vue-lazyload.js"></script>
 <script src="js/data.js"></script>
 <script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
@@ -174,17 +178,28 @@
     });
 
 
-    $("a").click(function () {
-        $("a").removeClass("a_avtice");
-        $(this).addClass("a_avtice");
-    });
-
     new Vue({
         el: "#main",
         data: {
             test: 'asd',
-            indexImgs: indexImgs,
+            indexImgs: this.allImgs,
             curIndex: -1
+        },
+        computed: {
+            allImgs: function () {
+                if (this.curIndex === -1) {
+                    var allItems = [];
+                    indexImgs.forEach(function (value) {
+                        var imgs = value;
+                        imgs.forEach(function (value2) {
+                            allItems.push(value2);
+                        })
+                    })
+                } else {
+                    allItems = indexImgs
+                }
+                return allItems;
+            }
         },
         methods: {
             changeIndex: function (cIndex) {

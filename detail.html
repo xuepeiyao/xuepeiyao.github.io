@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/merge.min.css">
 </head>
 <body>
-<div class="sdel-page" id="main">
+<div class="sdel-page" id="main" style="display: none">
     <!--<div class="page_info"><img src="images/banquan.png" /></div>-->
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -66,6 +66,7 @@
         },
         mounted: function () {
             var $this = this;
+            document.getElementById("main").style.display=""
             var id = getParam("id");
             if (id >= 0) {
                 var item = detailData[id]
@@ -78,7 +79,7 @@
                 console.log($this.imgs);
                 $this.$nextTick(function () {
                     $this.swiperInit();
-                    // $this.onMouseMove();
+                    $this.onMouseMove();
                 });
             }
         },
