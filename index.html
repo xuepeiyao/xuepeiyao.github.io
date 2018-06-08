@@ -31,45 +31,34 @@
                 <div id="main" style="width: 100%;height: 100%;">
                     <div class="xpy_nav">
                         <div class="nav_item">
-                            <a @click="changeIndex(-1)" :class="{a_avtice:curIndex===-1}" id="nav1" href="#">All
+                            <a @click="changeIndex('all')" :class="{a_avtice:curGenre==='all'}" id="nav1" href="#">All
                                 Work</a>
                         </div>
                         <div class="nav_item">
-                            <a @click="changeIndex(0)" :class="{a_avtice:curIndex===0}" id="nav2"
+                            <a @click="changeIndex('communication')" :class="{a_avtice:curGenre==='communication'}" id="nav2"
                                href="#">Communication Design</a>
                         </div>
                         <div class="nav_item">
-                            <a @click="changeIndex(1)" :class="{a_avtice:curIndex===1}" id="nav3"
+                            <a @click="changeIndex('uiDesign')" :class="{a_avtice:curGenre==='uiDesign'}" id="nav3"
                                href="#">UI Design</a>
                         </div>
                         <div class="nav_item">
-                            <a @click="changeIndex(2)" :class="{a_avtice:curIndex===2}" id="nav4"
+                            <a @click="changeIndex('web')" :class="{a_avtice:curGenre==='web'}" id="nav4"
                                href="#">Web Design</a>
                         </div>
                         <div class="nav_item">
-                            <a @click="changeIndex(3)" :class="{a_avtice:curIndex===3}" id="nav5"
+                            <a @click="changeIndex('posterDesign')" :class="{a_avtice:curGenre==='posterDesign'}" id="nav5"
                                href="#">Poster Design</a>
                         </div>
                         <div class="nav_item">
-                            <a @click="changeIndex(4)" :class="{a_avtice:curIndex===4}" id="nav6"
+                            <a @click="changeIndex('illustion')" :class="{a_avtice:curGenre==='illustion'}" id="nav6"
                                href="#">illustration</a>
                         </div>
                     </div>
 
                     <div class="xpy_cont_page" id="xpy_cont_page">
-                        <div v-for="(indexImg,index) of allImgs" class="cont_list">
-                            <div v-for="img of indexImg" class="l_item" v-if="curIndex===index && curIndex!==-1">
-                                <div class="l_img"
-                                     @click="location.href = img.linkUrl"
-                                     v-lazy:background-image="img.imgUrl">
-                                </div>
-                                <span>{{img.imgTitle}}</span>
-                            </div>
-                            <div style="clear: both"></div>
-                        </div>
-
                         <div class="cont_list">
-                            <div v-for="(img,index) of allImgs" class="l_item" v-if="curIndex===-1">
+                            <div v-for="(img,index) of indexImgs" class="l_item" v-if="curGenre === img.genre || curGenre==='all'">
                                 <div class="l_img"
                                      @click="location.href = img.linkUrl"
                                      v-lazy:background-image="img.imgUrl">
@@ -182,28 +171,35 @@
         el: "#main",
         data: {
             test: 'asd',
-            indexImgs: this.allImgs,
-            curIndex: -1
+            indexImgs: indexImgs,
+            curIndex: -1,
+            curGenre:'all'
         },
-        computed: {
-            allImgs: function () {
-                if (this.curIndex === -1) {
-                    var allItems = [];
-                    indexImgs.forEach(function (value) {
-                        var imgs = value;
-                        imgs.forEach(function (value2) {
-                            allItems.push(value2);
-                        })
-                    })
-                } else {
-                    allItems = indexImgs
-                }
-                return allItems;
-            }
+        mounted:function(){
+            console.log(indexImgs)
         },
+        // computed: {
+        //     allImgs: function () {
+        //         if (this.curIndex === -1) {
+        //             var allItems = [];
+        //             indexImgs.forEach(function (value) {
+        //                 var imgs = value;
+        //                 imgs.forEach(function (value2) {
+        //                     allItems.push(value2);
+        //                 })
+        //             })
+        //         } else {
+        //             allItems = indexImgs
+        //         }
+        //         return allItems;
+        //     }
+        // },
         methods: {
             changeIndex: function (cIndex) {
-                this.curIndex = cIndex;
+                var $this = this;
+                $this.curGenre = cIndex;
+                // this.curIndex = cIndex;
+
             }
         }
     })
