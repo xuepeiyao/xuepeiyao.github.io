@@ -110,6 +110,24 @@ var indexImgs = [
             linkUrl: 'detail.html?id=16'
         },
         {
+            genre:'communication',
+            imgUrl: './images/communication/eight/index.png',
+            imgTitle: 'send a letter',
+            linkUrl: 'detail.html?id=29'
+        },
+        {
+            genre:'communication',
+            imgUrl: './images/communication/nine/index.png',
+            imgTitle: '梦长安',
+            linkUrl: 'detail.html?id=30'
+        },
+        {
+            genre:'communication',
+            imgUrl: './images/communication/ten/index.png',
+            imgTitle: '字体实验',
+            linkUrl: 'detail.html?id=31'
+        },
+        {
         	genre:'illustion',
             imgUrl: './images/illustion/1_index.png',
             imgTitle: '街角 （上）',

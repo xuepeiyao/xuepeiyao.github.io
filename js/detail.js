@@ -230,7 +230,7 @@ var detailData = [
     },
     {
         index:18,
-        title: "插画",
+        title: "街角 （上）",
         descriptionChinese: "",
         descriptionEnglish: "",
         imgs: [
@@ -239,7 +239,7 @@ var detailData = [
     },
     {
         index:19,
-        title: "插画",
+        title: "下午茶",
         descriptionChinese: "",
         descriptionEnglish: "",
         imgs: [
@@ -248,7 +248,7 @@ var detailData = [
     },
     {
         index:20,
-        title: "插画",
+        title: "哦 噗嗤",
         descriptionChinese: "",
         descriptionEnglish: "",
         imgs: [
@@ -266,7 +266,7 @@ var detailData = [
     },
     {
         index:22,
-        title: "插画",
+        title: "蘑菇人",
         descriptionChinese: "",
         descriptionEnglish: "",
         imgs: [
@@ -275,7 +275,7 @@ var detailData = [
     },
     {
         index:23,
-        title: "插画",
+        title: "啊",
         descriptionChinese: "",
         descriptionEnglish: "",
         imgs: [
@@ -284,7 +284,7 @@ var detailData = [
     },
     {
         index:24,
-        title: "插画",
+        title: "随笔（上）",
         descriptionChinese: "",
         descriptionEnglish: "",
         imgs: [
@@ -293,7 +293,7 @@ var detailData = [
     },
     {
         index:25,
-        title: "插画",
+        title: "随笔（下）",
         descriptionChinese: "",
         descriptionEnglish: "",
         imgs: [
@@ -302,7 +302,7 @@ var detailData = [
     },
     {
         index:26,
-        title: "插画",
+        title: "街角 （下）",
         descriptionChinese: "",
         descriptionEnglish: "",
         imgs: [
@@ -311,7 +311,7 @@ var detailData = [
     },
     {
         index:27,
-        title: "插画",
+        title: "井上雄彦",
         descriptionChinese: "",
         descriptionEnglish: "",
         imgs: [
@@ -320,11 +320,48 @@ var detailData = [
     },
     {
         index:28,
-        title: "插画",
+        title: "自画像",
         descriptionChinese: "",
         descriptionEnglish: "",
         imgs: [
             "./images/illustion/11.jpg"
+        ]
+    },
+    {
+        index:29,
+        title: "send a letter",
+        descriptionChinese: "",
+        descriptionEnglish: "",
+        imgs: [
+            "./images/communication/eight/1.jpg",
+            "./images/communication/eight/2.jpg",
+            "./images/communication/eight/3.jpg",
+            "./images/communication/eight/4.jpg",
+            "./images/communication/eight/5.jpg",
+            "./images/communication/eight/6.jpg",
+            "./images/communication/eight/7.jpg",
+            "./images/communication/eight/8.jpg"
+        ]
+    },
+    {
+        index:30,
+        title: "梦长安",
+        descriptionChinese: "",
+        descriptionEnglish: "",
+        imgs: [
+            "./images/communication/nine/1.jpg",
+            "./images/communication/nine/2.jpg",
+            "./images/communication/nine/3.jpg",
+            "./images/communication/nine/4.jpg",
+        ]
+    },
+    {
+        index:31,
+        title: "字体实验",
+        descriptionChinese: "",
+        descriptionEnglish: "",
+        imgs: [
+            "./images/communication/ten/1.jpg",
         ]
     },
 
