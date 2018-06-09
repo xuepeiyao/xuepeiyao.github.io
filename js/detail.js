@@ -333,14 +333,14 @@ var detailData = [
         descriptionChinese: "",
         descriptionEnglish: "",
         imgs: [
-            "./images/communication/eight/1.jpg",
-            "./images/communication/eight/2.jpg",
-            "./images/communication/eight/3.jpg",
-            "./images/communication/eight/4.jpg",
-            "./images/communication/eight/5.jpg",
-            "./images/communication/eight/6.jpg",
-            "./images/communication/eight/7.jpg",
-            "./images/communication/eight/8.jpg"
+            "./images/communication/eight/1.JPG",
+            "./images/communication/eight/2.JPG",
+            "./images/communication/eight/3.JPG",
+            "./images/communication/eight/4.JPG",
+            "./images/communication/eight/5.JPG",
+            "./images/communication/eight/6.JPG",
+            "./images/communication/eight/7.JPG",
+            "./images/communication/eight/8.JPG"
         ]
     },
     {
