@@ -22,7 +22,7 @@
         width: 100%;
         height: 100%;
     }
-    
+    .p-works-bg__elem{animation-play-state: paused; animation-name: none;}
     .p-works-bg.is-loaded{
         mix-blend-mode: multiply;
         -moz-transition-duration: 0.3s;
@@ -70,7 +70,13 @@
         z-index: 0;
     }
 
-
+    .p-works-bg .p-works-bg__elem--1{
+        position: absolute;
+        z-index: 10;top: 0%;
+        left: 0%;
+        width: 50%;
+        height: 100%;
+    }
 </style>
 </head>
 <body>
@@ -79,7 +85,7 @@
         <div class="pt-page pt-page-1">
             <div class="xpy_index">
                 <div class="xpy_left_page">
-                    <em class="em_pei"><img id="logo" src="images/page_1.png"/></em>
+                    <!-- <em class="em_pei"><img id="logo" src="images/page_1.png"/></em> -->
                     <div class="page_info"><img class="copyright_img" id="copyright" src="images/banquan.png"/></div>
                     <button id="about_me" class="pt-touch-button about_me"></button>
                 </div>
@@ -116,77 +122,81 @@
                             <div class="cont_list">
                                 <div v-for="(img,index) of indexImgs" class="l_item" v-if="curGenre === img.genre || curGenre==='all'">
                                     <div style="position: relative;    overflow: hidden;" >
-                                        <div class="p-worksindex__item__bg p-works-bg p-works-bg--3 is-loaded" style="background-color: rgb(210, 228, 245);position: absolute;top: 0;bottom: 0;left: 0;right: 0;">
-                                            <div class="p-works-bg__elem p-works-bg__elem--1 is-animating" style="background-color: rgb(35, 78, 158); animation-play-state: paused; animation-name: none;"></div>
-                                            <div class="p-works-bg__elem p-works-bg__elem--2 is-animating" style="background-color: rgb(119, 167, 217); animation-play-state: paused; animation-name: none;"></div>
+                                        <div class="p-worksindex__item__bg p-works-bg p-works-bg--3 is-loaded" 
+                                        :style="{backgroundColor: img.bgColor3}"
+                                        style=" position: absolute;top: 0;bottom: 0;left: 0;right: 0;">
+                                            <div class="p-works-bg__elem p-works-bg__elem--1 is-animating"
+                                            :style="{backgroundColor: img.bg1_color,height: img.bg1_height,width:img.bg1_width}"  ></div>
+                                            <div class="p-works-bg__elem p-works-bg__elem--2 is-animating"  
+                                            :style="{backgroundColor: img.bg2_color,height: img.bg2_height}" ></div>
                                         </div>
-                                        <div class="l_img"
-                                        @click="location.href = img.linkUrl"
-                                        v-lazy:background-image="img.imgUrl">
-                                    </div>
+                                    <div class="l_img"
+                                    @click="location.href = img.linkUrl"
+                                    v-lazy:background-image="img.imgUrl">
                                 </div>
-                                <span>{{img.imgTitle}}</span>
                             </div>
-                            <div style="clear: both"></div>
+                            <span>{{img.imgTitle}}</span>
                         </div>
-
+                        <div style="clear: both"></div>
                     </div>
-                </div>
-                <div style="clear: both"></div>
-            </div>
-        </div>
-    </div>
-    <div class="pt-page pt-page-2">
-        <div class="xpy_t_left_page">
-            <em class="em_pei"><img id="logo2" src="./images/page_1_hover.png"/></em>
-            <div class="page_info"><img class="copyright_img" id="copyright2" src="images/banquan_hover.png"/></div>
-            <button id="to_index" class="pt-touch-button to_index"></button>
-        </div>
-        <div class="page_about">
-            <img class="tuxiang" src="images/touxiang.png">
-            <div class="o-cont">
-                <h5>about</h5>
-                <div class="name-r">薛佩瑶/Agnes</div>
-                <div class="size-18">ui/视觉资深设计师</div>
-                <h5>work experience</h5>
-                <div>贺冰凇视觉艺术有限公司</div>
-                <div>蓝色光标数字营销机构</div>
-                <div>博达软件股份有限公司</div>
-                <h5>service</h5>
-                <div>
-                    TEDx Xi’an
-                </div>
-                <div>梅赛德斯奔驰</div>
-                <div>西安城墙</div>
-                <div> 西安临潼旅游休闲度假区</div>
-                <div> 华阳景区</div>
-                <div>西安曲江管委会</div>
-                <div>西安音乐厅</div>
-                <div>大连音乐家协会流行音乐学会</div>
-                <div>长庆石油等</div>
-                <h5>honor</h5>
-                <div>大连啤酒节吉祥物优秀奖</div>
-                <div>第六届全国设计艺术大赛优秀奖</div>
-                <div>全国艺术院校美术作品大赛三等奖</div>
-                <h5>contact</h5>
-                <div class="b-icon">
-                    <a>
-                        <img src="images/weixin.png">
-                    </a>
-                    <a href="https://weibo.com/u/2442047205">
-                        <img src="images/weibo.png">
-                    </a>
-                    <a href="https://www.instagram.com/ohh_agnes">
-                        <img src="images/instagram.png">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="pt-message">
-        <p>亲，你的浏览器不支持 CSS 动画，请使用 Chrome,Firefox,Safari 等浏览器浏览.</p>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
     </div>
+</div>
+<div class="pt-page pt-page-2">
+    <div class="xpy_t_left_page">
+        <em class="em_pei"><img id="logo2" src="./images/page_1_hover.png"/></em>
+        <div class="page_info"><img class="copyright_img" id="copyright2" src="images/banquan_hover.png"/></div>
+        <button id="to_index" class="pt-touch-button to_index"></button>
+    </div>
+    <div class="page_about">
+        <img class="tuxiang" src="images/touxiang.png">
+        <div class="o-cont">
+            <h5>about</h5>
+            <div class="name-r">薛佩瑶/Agnes</div>
+            <div class="size-18">ui/视觉资深设计师</div>
+            <h5>work experience</h5>
+            <div>贺冰凇视觉艺术有限公司</div>
+            <div>蓝色光标数字营销机构</div>
+            <div>博达软件股份有限公司</div>
+            <h5>service</h5>
+            <div>
+                TEDx Xi’an
+            </div>
+            <div>梅赛德斯奔驰</div>
+            <div>西安城墙</div>
+            <div> 西安临潼旅游休闲度假区</div>
+            <div> 华阳景区</div>
+            <div>西安曲江管委会</div>
+            <div>西安音乐厅</div>
+            <div>大连音乐家协会流行音乐学会</div>
+            <div>长庆石油等</div>
+            <h5>honor</h5>
+            <div>大连啤酒节吉祥物优秀奖</div>
+            <div>第六届全国设计艺术大赛优秀奖</div>
+            <div>全国艺术院校美术作品大赛三等奖</div>
+            <h5>contact</h5>
+            <div class="b-icon">
+                <a>
+                    <img src="images/weixin.png">
+                </a>
+                <a href="https://weibo.com/u/2442047205">
+                    <img src="images/weibo.png">
+                </a>
+                <a href="https://www.instagram.com/ohh_agnes">
+                    <img src="images/instagram.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pt-message">
+    <p>亲，你的浏览器不支持 CSS 动画，请使用 Chrome,Firefox,Safari 等浏览器浏览.</p>
+</div>
 </div>
 <script src="js/modernizr.custom.js"></script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
