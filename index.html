@@ -123,12 +123,12 @@
                                 <div v-for="(img,index) of indexImgs" class="l_item" v-if="curGenre === img.genre || curGenre==='all'">
                                     <div style="position: relative;    overflow: hidden;" >
                                         <div class="p-worksindex__item__bg p-works-bg p-works-bg--3 is-loaded" 
-                                        :style="{backgroundColor: img.bgColor3}"
+                                        :style="{backgroundColor: img.bg3_color}"
                                         style=" position: absolute;top: 0;bottom: 0;left: 0;right: 0;">
                                             <div class="p-works-bg__elem p-works-bg__elem--1 is-animating"
                                             :style="{backgroundColor: img.bg1_color,height: img.bg1_height,width:img.bg1_width}"  ></div>
                                             <div class="p-works-bg__elem p-works-bg__elem--2 is-animating"  
-                                            :style="{backgroundColor: img.bg2_color,height: img.bg2_height}" ></div>
+                                            :style="{backgroundColor: img.bg2_color,height: img.bg2_height,top:img.bg2_top,width:img.bg2_width,left:img.bg2_left}" ></div>
                                         </div>
                                     <div class="l_img"
                                     @click="location.href = img.linkUrl"
