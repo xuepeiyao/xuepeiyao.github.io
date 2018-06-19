@@ -120,7 +120,7 @@
 
                         <div class="xpy_cont_page" id="xpy_cont_page">
                             <div class="cont_list">
-                                <div v-for="(img,index) of indexImgs" class="l_item" v-if="curGenre === img.genre || curGenre==='all'">
+                                <div @click="location.href = img.linkUrl" v-for="(img,index) of indexImgs" class="l_item" v-if="curGenre === img.genre || curGenre==='all'">
                                     <div style="position: relative;    overflow: hidden;" >
                                         <div class="p-worksindex__item__bg p-works-bg p-works-bg--3 is-loaded" 
                                         :style="{backgroundColor: img.bg3_color}"
@@ -131,7 +131,6 @@
                                             :style="{backgroundColor: img.bg2_color,height: img.bg2_height,top:img.bg2_top,width:img.bg2_width,left:img.bg2_left}" ></div>
                                         </div>
                                     <div class="l_img"
-                                    @click="location.href = img.linkUrl"
                                     v-lazy:background-image="img.imgUrl">
                                 </div>
                             </div>

@@ -148,7 +148,8 @@ body {
     width: 16rem;
     /*height: 13rem;*/
     /*margin-bottom: 3rem;*/
-    margin-right: 2.5rem
+    margin-right: 2.5rem;
+    cursor: pointer
 }
 
 .xpy_index .xpy_right_page .xpy_cont_page .cont_list .l_item .l_img {
