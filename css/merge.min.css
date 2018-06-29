@@ -311,6 +311,8 @@ body {
     right: 0;
     margin: auto;
     opacity: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 .pt-page.pt-page-2 .page_about .o-cont .wx_icon{
     cursor: pointer;
