@@ -229,21 +229,26 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    width: 82%;  
+    position: relative;
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     /*margin-top: 5%*/
 }
 
 .pt-page.pt-page-2 .page_about img.tuxiang {
-    position: absolute;
+    /*position: absolute;*/
     left: 21.5rem;
     width: 100px;
     height: 141px;
-    margin-right: 2%;
+    margin-right: 19rem;
     margin-top: 7.2rem;
 }
 
 .pt-page.pt-page-2 .page_about .o-cont {
     position: absolute;
-    left: 30rem;
+    /*left: 30rem;*/
     color: #fff;
     font-size: 14px;
     margin-top: 4.9rem;
@@ -251,14 +256,18 @@ body {
 }
 
 .pt-page.pt-page-2 .page_about .o-cont h5 {
-    font-size: 18px;
+    font-size: .7rem;
     margin-bottom: 10px;
-    margin-top: 10px
+    margin-top: 1rem;
 }
 
 .pt-page.pt-page-2 .page_about .o-cont .name-r {
-    font-size: 20px;
+    font-size: .9rem;
     margin-bottom: 10px
+}
+
+.pt-page.pt-page-2 .page_about .o-cont .size-12 {
+    font-size: .6rem;
 }
 
 .pt-page.pt-page-2 .page_about .o-cont .size-18 {
@@ -266,21 +275,51 @@ body {
     margin-bottom: 10px
 }
 
+
 .pt-page.pt-page-2 .page_about .o-cont .b-icon a {
     margin-right: 10px;
     display: inline-block;
     width: 44px;
-    text-align: center
+    text-align: center;
 }
 
+.pt-page.pt-page-2 .page_about .o-cont .b-icon a:hover{
+    
+}
 .pt-page.pt-page-2 .page_about .o-cont .b-icon a i {
     text-align: center;
     display: block;
     font-style: normal
 }
-
-.pt-page.pt-page-2 .page_about .o-cont .b-icon img {
+.pt-page.pt-page-2 .page_about .o-cont .b-icon{
+    margin-bottom: 1rem
+}
+.pt-page.pt-page-2 .page_about .o-cont .b-icon .link_icon {
     height: 50px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.pt-page.pt-page-2 .page_about .o-cont .b-icon .link_icon:hover {
+    height: 60px;
+}
+.pt-page.pt-page-2 .page_about .o-cont .wechat-code-img{
+    position: absolute;
+    width: 14rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+}
+.pt-page.pt-page-2 .page_about .o-cont .wx_icon{
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.pt-page.pt-page-2 .page_about .o-cont .wx_icon:hover +.wechat-code-img{
+    display: block;
+    opacity: 1;
 }
 
 .sdel-page {
@@ -292,9 +331,7 @@ body {
 }
 
 .sdel-page .close-page .close {
-    /*display: none;*/
     width: 100%;
-    /*background: #0C0C0C;*/
     color: #fff;
     -webkit-transition: all 1s ease;
     transition: all 1s ease
