@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js" xmlns:v-lazy="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+    content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>Agnes</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animations.css"/>
+    <link rel="stylesheet" href="css/merge.min.css">
+    <style>
+    .a_avtice {
+        color: #9b9b9b
+    }
+    .p-works-bg{
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    .p-works-bg__elem{animation-play-state: paused; animation-name: none;}
+    .p-works-bg.is-loaded{
+        mix-blend-mode: multiply;
+        -moz-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    .l_img{
+        moz-transition-duration: 0.45s;
+        -o-transition-duration: 0.45s;
+        -webkit-transition-duration: 0.45s;
+        transition-duration: 0.45s;
+        -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    .l_item:hover  .l_img{
+        -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1)
+    }
+
+    .l_item:hover .p-works-bg.is-loaded{
+        transform: translateY(0);
+    }
+    .p-works-bg.p-works-bg--3 .p-works-bg__elem--2{
+        top: 0%;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+    }
+    .p-works-bg .p-works-bg__elem--2 {
+        position: absolute;
+        z-index: 0;
+    }
+
+    .p-works-bg .p-works-bg__elem--1{
+        position: absolute;
+        z-index: 10;top: 0%;
+        left: 0%;
+        width: 50%;
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+
+    <div id="pt-main" class="pt-perspective">
+        <div class="pt-page pt-page-1">
+            <div class="xpy_index">
+                <div class="xpy_left_page">
+                    <em class="em_pei"><img id="logo" src="images/page_1.png"/></em>
+                    <div class="page_info"><img class="copyright_img" id="copyright" src="images/banquan.png"/></div>
+                    <button id="about_me" class="pt-touch-button about_me"></button>
+                </div>
+                <div class="xpy_right_page">
+                    <div id="main" style="width: 100%;height: 100%;">
+                        <div class="xpy_nav">
+                            <div class="nav_item">
+                                <a @click="changeIndex('all')" :class="{a_avtice:curGenre==='all'}" id="nav1" href="#">All
+                                Work</a>
+                            </div>
+                            <div class="nav_item">
+                                <a @click="changeIndex('communication')" :class="{a_avtice:curGenre==='communication'}" id="nav2"
+                                href="#">Communication Design</a>
+                            </div>
+                            <div class="nav_item">
+                                <a @click="changeIndex('uiDesign')" :class="{a_avtice:curGenre==='uiDesign'}" id="nav3"
+                                href="#">UI Design</a>
+                            </div>
+                            <div class="nav_item">
+                                <a @click="changeIndex('web')" :class="{a_avtice:curGenre==='web'}" id="nav4"
+                                href="#">Web Design</a>
+                            </div>
+                            <div class="nav_item">
+                                <a @click="changeIndex('posterDesign')" :class="{a_avtice:curGenre==='posterDesign'}" id="nav5"
+                                href="#">Poster Design</a>
+                            </div>
+                            <div class="nav_item">
+                                <a @click="changeIndex('illustion')" :class="{a_avtice:curGenre==='illustion'}" id="nav6"
+                                href="#">illustration</a>
+                            </div>
+                        </div>
+
+                        <div class="xpy_cont_page" id="xpy_cont_page">
+                            <div class="cont_list">
+                                <div @click="location.href = img.linkUrl" v-for="(img,index) of indexImgs" class="l_item" v-if="curGenre === img.genre || curGenre==='all'">
+                                    <div style="position: relative;    overflow: hidden;" >
+                                        <div class="p-worksindex__item__bg p-works-bg p-works-bg--3 is-loaded" 
+                                        :style="{backgroundColor: img.bg3_color}"
+                                        style=" position: absolute;top: 0;bottom: 0;left: 0;right: 0;">
+                                            <div class="p-works-bg__elem p-works-bg__elem--1 is-animating"
+                                            :style="{backgroundColor: img.bg1_color,height: img.bg1_height,width:img.bg1_width}"  ></div>
+                                            <div class="p-works-bg__elem p-works-bg__elem--2 is-animating"  
+                                            :style="{backgroundColor: img.bg2_color,height: img.bg2_height,top:img.bg2_top,width:img.bg2_width,left:img.bg2_left}" ></div>
+                                        </div>
+                                    <div class="l_img"
+                                    v-lazy:background-image="img.imgUrl">
+                                </div>
+                            </div>
+                            <span>{{img.imgTitle}}</span>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+</div>
+<div class="pt-page pt-page-2">
+    <div class="xpy_t_left_page">
+        <em class="em_pei"><img id="logo2" src="./images/page_1_hover.png"/></em>
+        <div class="page_info"><img class="copyright_img" id="copyright2" src="images/banquan_hover.png"/></div>
+        <button id="to_index" class="pt-touch-button to_index"></button>
+    </div>
+    <div class="page_about">
+        <img class="tuxiang" src="images/touxiang.png">
+        <div class="o-cont">
+            <h5>about</h5>
+            <div class="name-r">薛佩瑶/Agnes</div>
+            <div class="size-12">ui/视觉资深设计师</div>
+            <h5>work experience</h5>
+            <div class="size-12">贺冰凇视觉艺术有限公司</div>
+            <div class="size-12">蓝色光标数字营销机构</div>
+            <div class="size-12">博达软件股份有限公司</div>
+            <h5>service</h5>
+            <div>
+                TEDx Xi’an
+            </div>
+            <div class="size-12">梅赛德斯奔驰</div>
+            <div class="size-12">西安城墙</div>
+            <div class="size-12"> 西安临潼旅游休闲度假区</div>
+            <div class="size-12"> 华阳景区</div>
+            <div class="size-12">西安曲江管委会</div>
+            <div class="size-12">西安音乐厅</div>
+            <div class="size-12">大连音乐家协会流行音乐学会</div>
+            <div class="size-12">长庆石油等</div>
+            <h5>honor</h5>
+            <div class="size-12">大连啤酒节吉祥物优秀奖</div>
+            <div class="size-12">第六届全国设计艺术大赛优秀奖</div>
+            <div class="size-12">全国艺术院校美术作品大赛三等奖</div>
+            <h5>contact</h5>
+            <div class="b-icon">
+                <a class="wx_icon">
+                    <img class="link_icon" src="images/weixin.png">
+                </a>
+                <img class="wechat-code-img" src="images/wechat_code.jpg">
+                <a href="https://weibo.com/u/2442047205">
+                    <img class="link_icon" src="images/weibo.png">
+                </a>
+                <a href="https://www.instagram.com/ohh_agnes">
+                    <img class="link_icon" src="images/instagram.png">
+                </a>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+<div class="pt-message">
+    <p>亲，你的浏览器不支持 CSS 动画，请使用 Chrome,Firefox,Safari 等浏览器浏览.</p>
+</div>
+</div>
+<script src="js/modernizr.custom.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/vue-lazyload/1.2.3/vue-lazyload.js"></script>
+<script src="js/data.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
+<script src="js/jquery.dlmenu.js"></script>
+<script src="js/pagetransitions.js"></script>
+<script>
+
+    // Vue.use(VueLazyload);
+    Vue.use(VueLazyload, {
+        preLoad: 1.3,
+        error: 'dist/error.png',
+        loading: './images/default.png',
+        attempt: 4
+    });
+
+    $(".xpy_left_page").mouseover(function () {
+        $("#logo").attr('src', './images/page_1_hover.png');
+        $("#about_me").css("background-image", "url(./images/Group_hover.png)");
+        $("#copyright").attr('src', './images/banquan_hover.png');
+    });
+    $(".xpy_left_page").mouseout(function () {
+        $("#about_me").css("color", "black");
+        $("#logo").attr('src', './images/page_1.png');
+        $("#about_me").css("background-image", "url(./images/Group.png)");
+        $("#copyright").attr('src', './images/banquan.png');
+
+    });
+    $(".xpy_t_left_page").mousemove(function () {
+        $("#logo2").attr('src', './images/page_1.png');
+        $("#to_index").css("background-image", "url(./images/Group2_hover.png)");
+        $("#copyright2").attr('src', './images/banquan.png');
+    });
+    $(".xpy_t_left_page").mouseout(function () {
+        $("#copyright2").attr('src', './images/banquan_hover.png');
+        $("#to_index").css("background-image", "url(./images/Group2.png)");
+        $("#logo2").attr('src', './images/page_1_hover.png');
+    });
+
+
+    new Vue({
+        el: "#main",
+        data: {
+            test: 'asd',
+            indexImgs: indexImgs,
+            curIndex: -1,
+            curGenre:'all'
+        },
+        mounted:function(){
+            console.log(indexImgs)
+        },
+        // computed: {
+        //     allImgs: function () {
+        //         if (this.curIndex === -1) {
+        //             var allItems = [];
+        //             indexImgs.forEach(function (value) {
+        //                 var imgs = value;
+        //                 imgs.forEach(function (value2) {
+        //                     allItems.push(value2);
+        //                 })
+        //             })
+        //         } else {
+        //             allItems = indexImgs
+        //         }
+        //         return allItems;
+        //     }
+        // },
+        methods: {
+            changeIndex: function (cIndex) {
+                var $this = this;
+                $this.curGenre = cIndex;
+                // this.curIndex = cIndex;
+
+            }
+        }
+    })
+</script>
+</body>
+</html>
+

@@ -1,0 +1,83 @@
+name: Build and deploy Agnes portfolio
+on:
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: '已审核预览并确认切换线上网站（填写 DEPLOY）'
+        required: true
+        default: 'PREVIEW'
+permissions:
+  contents: read
+concurrency:
+  group: agnes-pages-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: rebuild
+      - uses: actions/checkout@v4
+        with:
+          ref: 5af767fb6a7a26168264efc6e8d257946e4822b1
+          path: legacy-source
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Restore original assets
+        working-directory: rebuild
+        run: node scripts/prepare-legacy.mjs ../legacy-source
+      - name: Install image processor
+        working-directory: rebuild
+        run: npm install --no-audit --no-fund
+      - name: Optimize legacy images
+        working-directory: rebuild
+        run: node scripts/images.mjs --legacy-only
+      - name: Build and verify
+        env:
+          AGNES_REQUIRE_LOCAL_MEDIA: "1"
+        working-directory: rebuild
+        run: |
+          npm run build
+          npm run check
+      - name: Install browser QA tools
+        working-directory: rebuild
+        run: |
+          npm install --no-save --package-lock=false playwright@1.60.0
+          npx playwright install --with-deps chromium
+      - name: Browser QA and review export
+        working-directory: rebuild
+        run: |
+          node scripts/qa-browser.mjs
+          node scripts/export-review.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: agnes-review
+          path: |
+            rebuild/dist
+            rebuild/reports
+            rebuild/review
+      - uses: actions/upload-pages-artifact@v3
+        if: inputs.publish == 'DEPLOY'
+        with:
+          path: rebuild/dist
+  deploy:
+    if: inputs.publish == 'DEPLOY'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

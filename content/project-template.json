@@ -1,0 +1,21 @@
+{
+  "title": "",
+  "slug": "your-project-slug",
+  "category": "communication",
+  "tags": [],
+  "year": null,
+  "client": "",
+  "summary": "",
+  "role": "",
+  "background": "",
+  "goal": "",
+  "process": "",
+  "outcome": "",
+  "cover": "",
+  "media": [],
+  "featured": false,
+  "order": 0,
+  "status": "draft",
+  "source": "provided",
+  "notes": "此模板不参与公开构建。请填写真实信息后再改为 public。"
+}

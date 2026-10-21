@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-21T08:35:37.431Z",
+  "pages": 53,
+  "localReferencesChecked": 773,
+  "legacyLinks": 32,
+  "publishedProjects": 48,
+  "remoteLegacyImageReferences": 137,
+  "localLegacyImagesAvailable": false,
+  "result": "passed",
+  "limits": [
+    "静态构建与数据检查通过；远程旧图可用性未通过网络验证。",
+    "浏览器交互与断点检查另见 verification.md。"
+  ]
+}
