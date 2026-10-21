@@ -1,0 +1,424 @@
+{
+  "legacyCommit": "5af767fb6a7a26168264efc6e8d257946e4822b1",
+  "legacyCount": 32,
+  "newCount": 16,
+  "missingPaths": [],
+  "projects": [
+    {
+      "title": "西安城墙海报",
+      "slug": "xian-city-wall",
+      "legacyId": 15,
+      "source": "legacy",
+      "media": 9,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "西安音乐厅乐团",
+      "slug": "xian-orchestra",
+      "legacyId": 14,
+      "source": "legacy",
+      "media": 5,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "西安音乐厅文艺账单h5",
+      "slug": "concert-bill",
+      "legacyId": 8,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "TEDx XI’AN",
+      "slug": "tedx-xian",
+      "legacyId": 5,
+      "source": "legacy",
+      "media": 6,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "华阳景区",
+      "slug": "huayang-scenic",
+      "legacyId": 7,
+      "source": "legacy",
+      "media": 4,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "博达环境导视系统",
+      "slug": "boda-wayfinding",
+      "legacyId": 0,
+      "source": "legacy",
+      "media": 10,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "宏欣教育",
+      "slug": "hongxin-education",
+      "legacyId": 6,
+      "source": "legacy",
+      "media": 10,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "飞跃大西安",
+      "slug": "fly-over-xian",
+      "legacyId": 11,
+      "source": "legacy",
+      "media": 3,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "博达官网",
+      "slug": "boda-website",
+      "legacyId": 12,
+      "source": "legacy",
+      "media": 7,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "天津大学教师个人主页",
+      "slug": "tianjin-faculty",
+      "legacyId": 13,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "捷业独角兽",
+      "slug": "jieye-unicorn",
+      "legacyId": 1,
+      "source": "legacy",
+      "media": 4,
+      "notes": "旧说明与环境导视重复，已暂隐藏，原文在 legacy/detail.js。",
+      "missingDescription": true
+    },
+    {
+      "title": "空指针乐队",
+      "slug": "null-pointer-band",
+      "legacyId": 2,
+      "source": "legacy",
+      "media": 5,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "长安嘿帮",
+      "slug": "changan-heibang",
+      "legacyId": 9,
+      "source": "legacy",
+      "media": 2,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "像素小人",
+      "slug": "pixel-characters",
+      "legacyId": 3,
+      "source": "legacy",
+      "media": 3,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "我是赫拉话剧海报",
+      "slug": "i-am-hera",
+      "legacyId": 17,
+      "source": "legacy",
+      "media": 3,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "壹庐茶社",
+      "slug": "yilu-tea",
+      "legacyId": 4,
+      "source": "legacy",
+      "media": 5,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "D.E.A.L",
+      "slug": "deal-photography",
+      "legacyId": 10,
+      "source": "legacy",
+      "media": 2,
+      "notes": "",
+      "missingDescription": false
+    },
+    {
+      "title": "海报",
+      "slug": "poster-studies",
+      "legacyId": 16,
+      "source": "legacy",
+      "media": 2,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "send a letter",
+      "slug": "send-a-letter",
+      "legacyId": 29,
+      "source": "legacy",
+      "media": 8,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "梦长安",
+      "slug": "dream-changan",
+      "legacyId": 30,
+      "source": "legacy",
+      "media": 4,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "字体实验",
+      "slug": "type-experiments",
+      "legacyId": 31,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "街角 （上）",
+      "slug": "street-corner-one",
+      "legacyId": 18,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "街角 （下）",
+      "slug": "street-corner-two",
+      "legacyId": 26,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "下午茶",
+      "slug": "afternoon-tea",
+      "legacyId": 19,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "哦 噗嗤",
+      "slug": "oh-puchi",
+      "legacyId": 20,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "插画",
+      "slug": "illustration-study",
+      "legacyId": 21,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "蘑菇人",
+      "slug": "mushroom-person",
+      "legacyId": 22,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "啊",
+      "slug": "ah",
+      "legacyId": 23,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "随笔（上）",
+      "slug": "sketches-one",
+      "legacyId": 24,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "随笔（下）",
+      "slug": "sketches-two",
+      "legacyId": 25,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "井上雄彦",
+      "slug": "inoue-takehiko",
+      "legacyId": 27,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "自画像",
+      "slug": "self-portrait",
+      "legacyId": 28,
+      "source": "legacy",
+      "media": 1,
+      "notes": "",
+      "missingDescription": true
+    },
+    {
+      "title": "火影忍者集享卡",
+      "slug": "naruto-membership-card",
+      "source": "provided",
+      "media": 1,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "科大讯飞storyboard",
+      "slug": "iflytek-storyboard",
+      "source": "provided",
+      "media": 1,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "肯德基",
+      "slug": "kfc",
+      "source": "provided",
+      "media": 1,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "西安扶贫超市品牌全案",
+      "slug": "xian-community-market",
+      "source": "provided",
+      "media": 4,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "重庆大悦城",
+      "slug": "chongqing-joy-city",
+      "source": "provided",
+      "media": 1,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "金花茯茶",
+      "slug": "jinhua-tea",
+      "source": "provided",
+      "media": 1,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "隆基20周年年历及新年物料",
+      "slug": "longi-anniversary",
+      "source": "provided",
+      "media": 4,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "首创奥莱",
+      "slug": "capital-outlets",
+      "source": "provided",
+      "media": 1,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "畅连北斗卫星消息",
+      "slug": "meetime-satellite",
+      "source": "provided",
+      "media": 5,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "中国移动海报",
+      "slug": "china-mobile",
+      "source": "provided",
+      "media": 1,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "北斗卫星消息海报",
+      "slug": "satellite-posters",
+      "source": "provided",
+      "media": 2,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "华为产品场景海报",
+      "slug": "huawei-scenarios",
+      "source": "provided",
+      "media": 6,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "小天鹅洗衣机系列海报",
+      "slug": "little-swan",
+      "source": "provided",
+      "media": 1,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "畅连3周年",
+      "slug": "meetime-anniversary",
+      "source": "provided",
+      "media": 3,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "美的洗衣机节气海报",
+      "slug": "midea-seasonal",
+      "source": "provided",
+      "media": 1,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    },
+    {
+      "title": "插画近作",
+      "slug": "illustration-new-1",
+      "source": "provided",
+      "media": 3,
+      "notes": "标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。",
+      "missingDescription": true
+    }
+  ]
+}

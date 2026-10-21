@@ -1,0 +1,1170 @@
+{
+  "media/naruto-membership-card/01.png": {
+    "width": 1820,
+    "height": 814,
+    "variants": [
+      {
+        "width": 480,
+        "height": 215,
+        "avif": "/media/optimized/d974b667cadb-480.avif",
+        "webp": "/media/optimized/d974b667cadb-480.webp",
+        "jpeg": "/media/optimized/d974b667cadb-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 343,
+        "avif": "/media/optimized/d974b667cadb-768.avif",
+        "webp": "/media/optimized/d974b667cadb-768.webp",
+        "jpeg": "/media/optimized/d974b667cadb-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 537,
+        "avif": "/media/optimized/d974b667cadb-1200.avif",
+        "webp": "/media/optimized/d974b667cadb-1200.webp",
+        "jpeg": "/media/optimized/d974b667cadb-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 716,
+        "avif": "/media/optimized/d974b667cadb-1600.avif",
+        "webp": "/media/optimized/d974b667cadb-1600.webp",
+        "jpeg": "/media/optimized/d974b667cadb-1600.jpg"
+      }
+    ]
+  },
+  "media/iflytek-storyboard/01.png": {
+    "width": 1866,
+    "height": 504,
+    "variants": [
+      {
+        "width": 480,
+        "height": 130,
+        "avif": "/media/optimized/6a154d9c016a-480.avif",
+        "webp": "/media/optimized/6a154d9c016a-480.webp",
+        "jpeg": "/media/optimized/6a154d9c016a-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 207,
+        "avif": "/media/optimized/6a154d9c016a-768.avif",
+        "webp": "/media/optimized/6a154d9c016a-768.webp",
+        "jpeg": "/media/optimized/6a154d9c016a-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 324,
+        "avif": "/media/optimized/6a154d9c016a-1200.avif",
+        "webp": "/media/optimized/6a154d9c016a-1200.webp",
+        "jpeg": "/media/optimized/6a154d9c016a-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 432,
+        "avif": "/media/optimized/6a154d9c016a-1600.avif",
+        "webp": "/media/optimized/6a154d9c016a-1600.webp",
+        "jpeg": "/media/optimized/6a154d9c016a-1600.jpg"
+      }
+    ]
+  },
+  "media/kfc/01.png": {
+    "width": 790,
+    "height": 828,
+    "variants": [
+      {
+        "width": 480,
+        "height": 503,
+        "avif": "/media/optimized/f16faeeb017e-480.avif",
+        "webp": "/media/optimized/f16faeeb017e-480.webp",
+        "jpeg": "/media/optimized/f16faeeb017e-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 805,
+        "avif": "/media/optimized/f16faeeb017e-768.avif",
+        "webp": "/media/optimized/f16faeeb017e-768.webp",
+        "jpeg": "/media/optimized/f16faeeb017e-768.jpg"
+      },
+      {
+        "width": 790,
+        "height": 828,
+        "avif": "/media/optimized/f16faeeb017e-790.avif",
+        "webp": "/media/optimized/f16faeeb017e-790.webp",
+        "jpeg": "/media/optimized/f16faeeb017e-790.jpg"
+      }
+    ]
+  },
+  "media/xian-community-market/01.png": {
+    "width": 1836,
+    "height": 828,
+    "variants": [
+      {
+        "width": 480,
+        "height": 216,
+        "avif": "/media/optimized/88f1a3f46285-480.avif",
+        "webp": "/media/optimized/88f1a3f46285-480.webp",
+        "jpeg": "/media/optimized/88f1a3f46285-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 346,
+        "avif": "/media/optimized/88f1a3f46285-768.avif",
+        "webp": "/media/optimized/88f1a3f46285-768.webp",
+        "jpeg": "/media/optimized/88f1a3f46285-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 541,
+        "avif": "/media/optimized/88f1a3f46285-1200.avif",
+        "webp": "/media/optimized/88f1a3f46285-1200.webp",
+        "jpeg": "/media/optimized/88f1a3f46285-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 722,
+        "avif": "/media/optimized/88f1a3f46285-1600.avif",
+        "webp": "/media/optimized/88f1a3f46285-1600.webp",
+        "jpeg": "/media/optimized/88f1a3f46285-1600.jpg"
+      }
+    ]
+  },
+  "media/xian-community-market/02.png": {
+    "width": 1810,
+    "height": 816,
+    "variants": [
+      {
+        "width": 480,
+        "height": 216,
+        "avif": "/media/optimized/90d31a7dae69-480.avif",
+        "webp": "/media/optimized/90d31a7dae69-480.webp",
+        "jpeg": "/media/optimized/90d31a7dae69-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 346,
+        "avif": "/media/optimized/90d31a7dae69-768.avif",
+        "webp": "/media/optimized/90d31a7dae69-768.webp",
+        "jpeg": "/media/optimized/90d31a7dae69-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 541,
+        "avif": "/media/optimized/90d31a7dae69-1200.avif",
+        "webp": "/media/optimized/90d31a7dae69-1200.webp",
+        "jpeg": "/media/optimized/90d31a7dae69-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 721,
+        "avif": "/media/optimized/90d31a7dae69-1600.avif",
+        "webp": "/media/optimized/90d31a7dae69-1600.webp",
+        "jpeg": "/media/optimized/90d31a7dae69-1600.jpg"
+      }
+    ]
+  },
+  "media/xian-community-market/03.png": {
+    "width": 1804,
+    "height": 816,
+    "variants": [
+      {
+        "width": 480,
+        "height": 217,
+        "avif": "/media/optimized/db14ed3b8e8c-480.avif",
+        "webp": "/media/optimized/db14ed3b8e8c-480.webp",
+        "jpeg": "/media/optimized/db14ed3b8e8c-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 347,
+        "avif": "/media/optimized/db14ed3b8e8c-768.avif",
+        "webp": "/media/optimized/db14ed3b8e8c-768.webp",
+        "jpeg": "/media/optimized/db14ed3b8e8c-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 543,
+        "avif": "/media/optimized/db14ed3b8e8c-1200.avif",
+        "webp": "/media/optimized/db14ed3b8e8c-1200.webp",
+        "jpeg": "/media/optimized/db14ed3b8e8c-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 724,
+        "avif": "/media/optimized/db14ed3b8e8c-1600.avif",
+        "webp": "/media/optimized/db14ed3b8e8c-1600.webp",
+        "jpeg": "/media/optimized/db14ed3b8e8c-1600.jpg"
+      }
+    ]
+  },
+  "media/xian-community-market/04.png": {
+    "width": 1814,
+    "height": 822,
+    "variants": [
+      {
+        "width": 480,
+        "height": 218,
+        "avif": "/media/optimized/1146a8b5a32d-480.avif",
+        "webp": "/media/optimized/1146a8b5a32d-480.webp",
+        "jpeg": "/media/optimized/1146a8b5a32d-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 348,
+        "avif": "/media/optimized/1146a8b5a32d-768.avif",
+        "webp": "/media/optimized/1146a8b5a32d-768.webp",
+        "jpeg": "/media/optimized/1146a8b5a32d-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 544,
+        "avif": "/media/optimized/1146a8b5a32d-1200.avif",
+        "webp": "/media/optimized/1146a8b5a32d-1200.webp",
+        "jpeg": "/media/optimized/1146a8b5a32d-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 725,
+        "avif": "/media/optimized/1146a8b5a32d-1600.avif",
+        "webp": "/media/optimized/1146a8b5a32d-1600.webp",
+        "jpeg": "/media/optimized/1146a8b5a32d-1600.jpg"
+      }
+    ]
+  },
+  "media/chongqing-joy-city/01.png": {
+    "width": 1410,
+    "height": 804,
+    "variants": [
+      {
+        "width": 480,
+        "height": 274,
+        "avif": "/media/optimized/9163f2018de7-480.avif",
+        "webp": "/media/optimized/9163f2018de7-480.webp",
+        "jpeg": "/media/optimized/9163f2018de7-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 438,
+        "avif": "/media/optimized/9163f2018de7-768.avif",
+        "webp": "/media/optimized/9163f2018de7-768.webp",
+        "jpeg": "/media/optimized/9163f2018de7-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 684,
+        "avif": "/media/optimized/9163f2018de7-1200.avif",
+        "webp": "/media/optimized/9163f2018de7-1200.webp",
+        "jpeg": "/media/optimized/9163f2018de7-1200.jpg"
+      },
+      {
+        "width": 1410,
+        "height": 804,
+        "avif": "/media/optimized/9163f2018de7-1410.avif",
+        "webp": "/media/optimized/9163f2018de7-1410.webp",
+        "jpeg": "/media/optimized/9163f2018de7-1410.jpg"
+      }
+    ]
+  },
+  "media/jinhua-tea/01.png": {
+    "width": 1504,
+    "height": 782,
+    "variants": [
+      {
+        "width": 480,
+        "height": 250,
+        "avif": "/media/optimized/28ea11c5e0dd-480.avif",
+        "webp": "/media/optimized/28ea11c5e0dd-480.webp",
+        "jpeg": "/media/optimized/28ea11c5e0dd-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 399,
+        "avif": "/media/optimized/28ea11c5e0dd-768.avif",
+        "webp": "/media/optimized/28ea11c5e0dd-768.webp",
+        "jpeg": "/media/optimized/28ea11c5e0dd-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 624,
+        "avif": "/media/optimized/28ea11c5e0dd-1200.avif",
+        "webp": "/media/optimized/28ea11c5e0dd-1200.webp",
+        "jpeg": "/media/optimized/28ea11c5e0dd-1200.jpg"
+      },
+      {
+        "width": 1504,
+        "height": 782,
+        "avif": "/media/optimized/28ea11c5e0dd-1504.avif",
+        "webp": "/media/optimized/28ea11c5e0dd-1504.webp",
+        "jpeg": "/media/optimized/28ea11c5e0dd-1504.jpg"
+      }
+    ]
+  },
+  "media/longi-anniversary/01.png": {
+    "width": 1506,
+    "height": 828,
+    "variants": [
+      {
+        "width": 480,
+        "height": 264,
+        "avif": "/media/optimized/bc54036e3eeb-480.avif",
+        "webp": "/media/optimized/bc54036e3eeb-480.webp",
+        "jpeg": "/media/optimized/bc54036e3eeb-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 422,
+        "avif": "/media/optimized/bc54036e3eeb-768.avif",
+        "webp": "/media/optimized/bc54036e3eeb-768.webp",
+        "jpeg": "/media/optimized/bc54036e3eeb-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 660,
+        "avif": "/media/optimized/bc54036e3eeb-1200.avif",
+        "webp": "/media/optimized/bc54036e3eeb-1200.webp",
+        "jpeg": "/media/optimized/bc54036e3eeb-1200.jpg"
+      },
+      {
+        "width": 1506,
+        "height": 828,
+        "avif": "/media/optimized/bc54036e3eeb-1506.avif",
+        "webp": "/media/optimized/bc54036e3eeb-1506.webp",
+        "jpeg": "/media/optimized/bc54036e3eeb-1506.jpg"
+      }
+    ]
+  },
+  "media/longi-anniversary/02.png": {
+    "width": 1424,
+    "height": 814,
+    "variants": [
+      {
+        "width": 480,
+        "height": 274,
+        "avif": "/media/optimized/9d7138924e1f-480.avif",
+        "webp": "/media/optimized/9d7138924e1f-480.webp",
+        "jpeg": "/media/optimized/9d7138924e1f-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 439,
+        "avif": "/media/optimized/9d7138924e1f-768.avif",
+        "webp": "/media/optimized/9d7138924e1f-768.webp",
+        "jpeg": "/media/optimized/9d7138924e1f-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 686,
+        "avif": "/media/optimized/9d7138924e1f-1200.avif",
+        "webp": "/media/optimized/9d7138924e1f-1200.webp",
+        "jpeg": "/media/optimized/9d7138924e1f-1200.jpg"
+      },
+      {
+        "width": 1424,
+        "height": 814,
+        "avif": "/media/optimized/9d7138924e1f-1424.avif",
+        "webp": "/media/optimized/9d7138924e1f-1424.webp",
+        "jpeg": "/media/optimized/9d7138924e1f-1424.jpg"
+      }
+    ]
+  },
+  "media/longi-anniversary/03.png": {
+    "width": 1438,
+    "height": 816,
+    "variants": [
+      {
+        "width": 480,
+        "height": 272,
+        "avif": "/media/optimized/c329acece3b1-480.avif",
+        "webp": "/media/optimized/c329acece3b1-480.webp",
+        "jpeg": "/media/optimized/c329acece3b1-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 436,
+        "avif": "/media/optimized/c329acece3b1-768.avif",
+        "webp": "/media/optimized/c329acece3b1-768.webp",
+        "jpeg": "/media/optimized/c329acece3b1-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 681,
+        "avif": "/media/optimized/c329acece3b1-1200.avif",
+        "webp": "/media/optimized/c329acece3b1-1200.webp",
+        "jpeg": "/media/optimized/c329acece3b1-1200.jpg"
+      },
+      {
+        "width": 1438,
+        "height": 816,
+        "avif": "/media/optimized/c329acece3b1-1438.avif",
+        "webp": "/media/optimized/c329acece3b1-1438.webp",
+        "jpeg": "/media/optimized/c329acece3b1-1438.jpg"
+      }
+    ]
+  },
+  "media/longi-anniversary/04.png": {
+    "width": 1570,
+    "height": 820,
+    "variants": [
+      {
+        "width": 480,
+        "height": 251,
+        "avif": "/media/optimized/9f6c6eb0e847-480.avif",
+        "webp": "/media/optimized/9f6c6eb0e847-480.webp",
+        "jpeg": "/media/optimized/9f6c6eb0e847-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 401,
+        "avif": "/media/optimized/9f6c6eb0e847-768.avif",
+        "webp": "/media/optimized/9f6c6eb0e847-768.webp",
+        "jpeg": "/media/optimized/9f6c6eb0e847-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 627,
+        "avif": "/media/optimized/9f6c6eb0e847-1200.avif",
+        "webp": "/media/optimized/9f6c6eb0e847-1200.webp",
+        "jpeg": "/media/optimized/9f6c6eb0e847-1200.jpg"
+      },
+      {
+        "width": 1570,
+        "height": 820,
+        "avif": "/media/optimized/9f6c6eb0e847-1570.avif",
+        "webp": "/media/optimized/9f6c6eb0e847-1570.webp",
+        "jpeg": "/media/optimized/9f6c6eb0e847-1570.jpg"
+      }
+    ]
+  },
+  "media/capital-outlets/01.png": {
+    "width": 1704,
+    "height": 746,
+    "variants": [
+      {
+        "width": 480,
+        "height": 210,
+        "avif": "/media/optimized/a66742d06efa-480.avif",
+        "webp": "/media/optimized/a66742d06efa-480.webp",
+        "jpeg": "/media/optimized/a66742d06efa-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 336,
+        "avif": "/media/optimized/a66742d06efa-768.avif",
+        "webp": "/media/optimized/a66742d06efa-768.webp",
+        "jpeg": "/media/optimized/a66742d06efa-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 525,
+        "avif": "/media/optimized/a66742d06efa-1200.avif",
+        "webp": "/media/optimized/a66742d06efa-1200.webp",
+        "jpeg": "/media/optimized/a66742d06efa-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 700,
+        "avif": "/media/optimized/a66742d06efa-1600.avif",
+        "webp": "/media/optimized/a66742d06efa-1600.webp",
+        "jpeg": "/media/optimized/a66742d06efa-1600.jpg"
+      }
+    ]
+  },
+  "media/meetime-satellite/01.jpg": {
+    "width": 3341,
+    "height": 4724,
+    "variants": [
+      {
+        "width": 480,
+        "height": 679,
+        "avif": "/media/optimized/4d31b0a0b3d2-480.avif",
+        "webp": "/media/optimized/4d31b0a0b3d2-480.webp",
+        "jpeg": "/media/optimized/4d31b0a0b3d2-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 1086,
+        "avif": "/media/optimized/4d31b0a0b3d2-768.avif",
+        "webp": "/media/optimized/4d31b0a0b3d2-768.webp",
+        "jpeg": "/media/optimized/4d31b0a0b3d2-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 1697,
+        "avif": "/media/optimized/4d31b0a0b3d2-1200.avif",
+        "webp": "/media/optimized/4d31b0a0b3d2-1200.webp",
+        "jpeg": "/media/optimized/4d31b0a0b3d2-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 2262,
+        "avif": "/media/optimized/4d31b0a0b3d2-1600.avif",
+        "webp": "/media/optimized/4d31b0a0b3d2-1600.webp",
+        "jpeg": "/media/optimized/4d31b0a0b3d2-1600.jpg"
+      }
+    ]
+  },
+  "media/meetime-satellite/02.jpg": {
+    "width": 3341,
+    "height": 4724,
+    "variants": [
+      {
+        "width": 480,
+        "height": 679,
+        "avif": "/media/optimized/14e090d4ac8d-480.avif",
+        "webp": "/media/optimized/14e090d4ac8d-480.webp",
+        "jpeg": "/media/optimized/14e090d4ac8d-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 1086,
+        "avif": "/media/optimized/14e090d4ac8d-768.avif",
+        "webp": "/media/optimized/14e090d4ac8d-768.webp",
+        "jpeg": "/media/optimized/14e090d4ac8d-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 1697,
+        "avif": "/media/optimized/14e090d4ac8d-1200.avif",
+        "webp": "/media/optimized/14e090d4ac8d-1200.webp",
+        "jpeg": "/media/optimized/14e090d4ac8d-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 2262,
+        "avif": "/media/optimized/14e090d4ac8d-1600.avif",
+        "webp": "/media/optimized/14e090d4ac8d-1600.webp",
+        "jpeg": "/media/optimized/14e090d4ac8d-1600.jpg"
+      }
+    ]
+  },
+  "media/meetime-satellite/03.jpg": {
+    "width": 3647,
+    "height": 2751,
+    "variants": [
+      {
+        "width": 480,
+        "height": 362,
+        "avif": "/media/optimized/d3860b8983aa-480.avif",
+        "webp": "/media/optimized/d3860b8983aa-480.webp",
+        "jpeg": "/media/optimized/d3860b8983aa-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 579,
+        "avif": "/media/optimized/d3860b8983aa-768.avif",
+        "webp": "/media/optimized/d3860b8983aa-768.webp",
+        "jpeg": "/media/optimized/d3860b8983aa-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 905,
+        "avif": "/media/optimized/d3860b8983aa-1200.avif",
+        "webp": "/media/optimized/d3860b8983aa-1200.webp",
+        "jpeg": "/media/optimized/d3860b8983aa-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 1207,
+        "avif": "/media/optimized/d3860b8983aa-1600.avif",
+        "webp": "/media/optimized/d3860b8983aa-1600.webp",
+        "jpeg": "/media/optimized/d3860b8983aa-1600.jpg"
+      }
+    ]
+  },
+  "media/meetime-satellite/04.jpg": {
+    "width": 5940,
+    "height": 8400,
+    "variants": [
+      {
+        "width": 480,
+        "height": 679,
+        "avif": "/media/optimized/e0088cdd56b5-480.avif",
+        "webp": "/media/optimized/e0088cdd56b5-480.webp",
+        "jpeg": "/media/optimized/e0088cdd56b5-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 1086,
+        "avif": "/media/optimized/e0088cdd56b5-768.avif",
+        "webp": "/media/optimized/e0088cdd56b5-768.webp",
+        "jpeg": "/media/optimized/e0088cdd56b5-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 1697,
+        "avif": "/media/optimized/e0088cdd56b5-1200.avif",
+        "webp": "/media/optimized/e0088cdd56b5-1200.webp",
+        "jpeg": "/media/optimized/e0088cdd56b5-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 2263,
+        "avif": "/media/optimized/e0088cdd56b5-1600.avif",
+        "webp": "/media/optimized/e0088cdd56b5-1600.webp",
+        "jpeg": "/media/optimized/e0088cdd56b5-1600.jpg"
+      }
+    ]
+  },
+  "media/meetime-satellite/05.png": {
+    "width": 794,
+    "height": 1323,
+    "variants": [
+      {
+        "width": 480,
+        "height": 800,
+        "avif": "/media/optimized/38c7feb8508a-480.avif",
+        "webp": "/media/optimized/38c7feb8508a-480.webp",
+        "jpeg": "/media/optimized/38c7feb8508a-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 1280,
+        "avif": "/media/optimized/38c7feb8508a-768.avif",
+        "webp": "/media/optimized/38c7feb8508a-768.webp",
+        "jpeg": "/media/optimized/38c7feb8508a-768.jpg"
+      },
+      {
+        "width": 794,
+        "height": 1323,
+        "avif": "/media/optimized/38c7feb8508a-794.avif",
+        "webp": "/media/optimized/38c7feb8508a-794.webp",
+        "jpeg": "/media/optimized/38c7feb8508a-794.jpg"
+      }
+    ]
+  },
+  "media/china-mobile/01.png": {
+    "width": 1908,
+    "height": 568,
+    "variants": [
+      {
+        "width": 480,
+        "height": 143,
+        "avif": "/media/optimized/5ab6ef99d6e1-480.avif",
+        "webp": "/media/optimized/5ab6ef99d6e1-480.webp",
+        "jpeg": "/media/optimized/5ab6ef99d6e1-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 229,
+        "avif": "/media/optimized/5ab6ef99d6e1-768.avif",
+        "webp": "/media/optimized/5ab6ef99d6e1-768.webp",
+        "jpeg": "/media/optimized/5ab6ef99d6e1-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 357,
+        "avif": "/media/optimized/5ab6ef99d6e1-1200.avif",
+        "webp": "/media/optimized/5ab6ef99d6e1-1200.webp",
+        "jpeg": "/media/optimized/5ab6ef99d6e1-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 476,
+        "avif": "/media/optimized/5ab6ef99d6e1-1600.avif",
+        "webp": "/media/optimized/5ab6ef99d6e1-1600.webp",
+        "jpeg": "/media/optimized/5ab6ef99d6e1-1600.jpg"
+      }
+    ]
+  },
+  "media/satellite-posters/01.jpg": {
+    "width": 1600,
+    "height": 2133,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "avif": "/media/optimized/46b121a7791f-480.avif",
+        "webp": "/media/optimized/46b121a7791f-480.webp",
+        "jpeg": "/media/optimized/46b121a7791f-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "avif": "/media/optimized/46b121a7791f-768.avif",
+        "webp": "/media/optimized/46b121a7791f-768.webp",
+        "jpeg": "/media/optimized/46b121a7791f-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 1600,
+        "avif": "/media/optimized/46b121a7791f-1200.avif",
+        "webp": "/media/optimized/46b121a7791f-1200.webp",
+        "jpeg": "/media/optimized/46b121a7791f-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 2133,
+        "avif": "/media/optimized/46b121a7791f-1600.avif",
+        "webp": "/media/optimized/46b121a7791f-1600.webp",
+        "jpeg": "/media/optimized/46b121a7791f-1600.jpg"
+      }
+    ]
+  },
+  "media/satellite-posters/02.jpg": {
+    "width": 1600,
+    "height": 2133,
+    "variants": [
+      {
+        "width": 480,
+        "height": 640,
+        "avif": "/media/optimized/22c7f6eee97d-480.avif",
+        "webp": "/media/optimized/22c7f6eee97d-480.webp",
+        "jpeg": "/media/optimized/22c7f6eee97d-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 1024,
+        "avif": "/media/optimized/22c7f6eee97d-768.avif",
+        "webp": "/media/optimized/22c7f6eee97d-768.webp",
+        "jpeg": "/media/optimized/22c7f6eee97d-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 1600,
+        "avif": "/media/optimized/22c7f6eee97d-1200.avif",
+        "webp": "/media/optimized/22c7f6eee97d-1200.webp",
+        "jpeg": "/media/optimized/22c7f6eee97d-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 2133,
+        "avif": "/media/optimized/22c7f6eee97d-1600.avif",
+        "webp": "/media/optimized/22c7f6eee97d-1600.webp",
+        "jpeg": "/media/optimized/22c7f6eee97d-1600.jpg"
+      }
+    ]
+  },
+  "media/huawei-scenarios/01.jpg": {
+    "width": 1080,
+    "height": 3115,
+    "variants": [
+      {
+        "width": 480,
+        "height": 1384,
+        "avif": "/media/optimized/fcd77354636a-480.avif",
+        "webp": "/media/optimized/fcd77354636a-480.webp",
+        "jpeg": "/media/optimized/fcd77354636a-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 2215,
+        "avif": "/media/optimized/fcd77354636a-768.avif",
+        "webp": "/media/optimized/fcd77354636a-768.webp",
+        "jpeg": "/media/optimized/fcd77354636a-768.jpg"
+      },
+      {
+        "width": 1080,
+        "height": 3115,
+        "avif": "/media/optimized/fcd77354636a-1080.avif",
+        "webp": "/media/optimized/fcd77354636a-1080.webp",
+        "jpeg": "/media/optimized/fcd77354636a-1080.jpg"
+      }
+    ]
+  },
+  "media/huawei-scenarios/02.jpg": {
+    "width": 1080,
+    "height": 3115,
+    "variants": [
+      {
+        "width": 480,
+        "height": 1384,
+        "avif": "/media/optimized/1ddeefd6c5d3-480.avif",
+        "webp": "/media/optimized/1ddeefd6c5d3-480.webp",
+        "jpeg": "/media/optimized/1ddeefd6c5d3-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 2215,
+        "avif": "/media/optimized/1ddeefd6c5d3-768.avif",
+        "webp": "/media/optimized/1ddeefd6c5d3-768.webp",
+        "jpeg": "/media/optimized/1ddeefd6c5d3-768.jpg"
+      },
+      {
+        "width": 1080,
+        "height": 3115,
+        "avif": "/media/optimized/1ddeefd6c5d3-1080.avif",
+        "webp": "/media/optimized/1ddeefd6c5d3-1080.webp",
+        "jpeg": "/media/optimized/1ddeefd6c5d3-1080.jpg"
+      }
+    ]
+  },
+  "media/huawei-scenarios/03.jpg": {
+    "width": 1080,
+    "height": 3115,
+    "variants": [
+      {
+        "width": 480,
+        "height": 1384,
+        "avif": "/media/optimized/76d48b6fb84a-480.avif",
+        "webp": "/media/optimized/76d48b6fb84a-480.webp",
+        "jpeg": "/media/optimized/76d48b6fb84a-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 2215,
+        "avif": "/media/optimized/76d48b6fb84a-768.avif",
+        "webp": "/media/optimized/76d48b6fb84a-768.webp",
+        "jpeg": "/media/optimized/76d48b6fb84a-768.jpg"
+      },
+      {
+        "width": 1080,
+        "height": 3115,
+        "avif": "/media/optimized/76d48b6fb84a-1080.avif",
+        "webp": "/media/optimized/76d48b6fb84a-1080.webp",
+        "jpeg": "/media/optimized/76d48b6fb84a-1080.jpg"
+      }
+    ]
+  },
+  "media/huawei-scenarios/04.jpg": {
+    "width": 1080,
+    "height": 3115,
+    "variants": [
+      {
+        "width": 480,
+        "height": 1384,
+        "avif": "/media/optimized/b25b6ad72a63-480.avif",
+        "webp": "/media/optimized/b25b6ad72a63-480.webp",
+        "jpeg": "/media/optimized/b25b6ad72a63-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 2215,
+        "avif": "/media/optimized/b25b6ad72a63-768.avif",
+        "webp": "/media/optimized/b25b6ad72a63-768.webp",
+        "jpeg": "/media/optimized/b25b6ad72a63-768.jpg"
+      },
+      {
+        "width": 1080,
+        "height": 3115,
+        "avif": "/media/optimized/b25b6ad72a63-1080.avif",
+        "webp": "/media/optimized/b25b6ad72a63-1080.webp",
+        "jpeg": "/media/optimized/b25b6ad72a63-1080.jpg"
+      }
+    ]
+  },
+  "media/huawei-scenarios/05.jpg": {
+    "width": 1080,
+    "height": 3115,
+    "variants": [
+      {
+        "width": 480,
+        "height": 1384,
+        "avif": "/media/optimized/4c5f390d3c84-480.avif",
+        "webp": "/media/optimized/4c5f390d3c84-480.webp",
+        "jpeg": "/media/optimized/4c5f390d3c84-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 2215,
+        "avif": "/media/optimized/4c5f390d3c84-768.avif",
+        "webp": "/media/optimized/4c5f390d3c84-768.webp",
+        "jpeg": "/media/optimized/4c5f390d3c84-768.jpg"
+      },
+      {
+        "width": 1080,
+        "height": 3115,
+        "avif": "/media/optimized/4c5f390d3c84-1080.avif",
+        "webp": "/media/optimized/4c5f390d3c84-1080.webp",
+        "jpeg": "/media/optimized/4c5f390d3c84-1080.jpg"
+      }
+    ]
+  },
+  "media/huawei-scenarios/06.jpg": {
+    "width": 1080,
+    "height": 3115,
+    "variants": [
+      {
+        "width": 480,
+        "height": 1384,
+        "avif": "/media/optimized/9ae1bae39cfe-480.avif",
+        "webp": "/media/optimized/9ae1bae39cfe-480.webp",
+        "jpeg": "/media/optimized/9ae1bae39cfe-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 2215,
+        "avif": "/media/optimized/9ae1bae39cfe-768.avif",
+        "webp": "/media/optimized/9ae1bae39cfe-768.webp",
+        "jpeg": "/media/optimized/9ae1bae39cfe-768.jpg"
+      },
+      {
+        "width": 1080,
+        "height": 3115,
+        "avif": "/media/optimized/9ae1bae39cfe-1080.avif",
+        "webp": "/media/optimized/9ae1bae39cfe-1080.webp",
+        "jpeg": "/media/optimized/9ae1bae39cfe-1080.jpg"
+      }
+    ]
+  },
+  "media/little-swan/01.png": {
+    "width": 1742,
+    "height": 814,
+    "variants": [
+      {
+        "width": 480,
+        "height": 224,
+        "avif": "/media/optimized/c89e9c72f977-480.avif",
+        "webp": "/media/optimized/c89e9c72f977-480.webp",
+        "jpeg": "/media/optimized/c89e9c72f977-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 359,
+        "avif": "/media/optimized/c89e9c72f977-768.avif",
+        "webp": "/media/optimized/c89e9c72f977-768.webp",
+        "jpeg": "/media/optimized/c89e9c72f977-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 561,
+        "avif": "/media/optimized/c89e9c72f977-1200.avif",
+        "webp": "/media/optimized/c89e9c72f977-1200.webp",
+        "jpeg": "/media/optimized/c89e9c72f977-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 748,
+        "avif": "/media/optimized/c89e9c72f977-1600.avif",
+        "webp": "/media/optimized/c89e9c72f977-1600.webp",
+        "jpeg": "/media/optimized/c89e9c72f977-1600.jpg"
+      }
+    ]
+  },
+  "media/meetime-anniversary/01.jpg": {
+    "width": 1440,
+    "height": 3120,
+    "variants": [
+      {
+        "width": 480,
+        "height": 1040,
+        "avif": "/media/optimized/221994c75d83-480.avif",
+        "webp": "/media/optimized/221994c75d83-480.webp",
+        "jpeg": "/media/optimized/221994c75d83-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 1664,
+        "avif": "/media/optimized/221994c75d83-768.avif",
+        "webp": "/media/optimized/221994c75d83-768.webp",
+        "jpeg": "/media/optimized/221994c75d83-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 2600,
+        "avif": "/media/optimized/221994c75d83-1200.avif",
+        "webp": "/media/optimized/221994c75d83-1200.webp",
+        "jpeg": "/media/optimized/221994c75d83-1200.jpg"
+      },
+      {
+        "width": 1440,
+        "height": 3120,
+        "avif": "/media/optimized/221994c75d83-1440.avif",
+        "webp": "/media/optimized/221994c75d83-1440.webp",
+        "jpeg": "/media/optimized/221994c75d83-1440.jpg"
+      }
+    ]
+  },
+  "media/meetime-anniversary/02.jpg": {
+    "width": 1440,
+    "height": 3120,
+    "variants": [
+      {
+        "width": 480,
+        "height": 1040,
+        "avif": "/media/optimized/7561a0013f21-480.avif",
+        "webp": "/media/optimized/7561a0013f21-480.webp",
+        "jpeg": "/media/optimized/7561a0013f21-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 1664,
+        "avif": "/media/optimized/7561a0013f21-768.avif",
+        "webp": "/media/optimized/7561a0013f21-768.webp",
+        "jpeg": "/media/optimized/7561a0013f21-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 2600,
+        "avif": "/media/optimized/7561a0013f21-1200.avif",
+        "webp": "/media/optimized/7561a0013f21-1200.webp",
+        "jpeg": "/media/optimized/7561a0013f21-1200.jpg"
+      },
+      {
+        "width": 1440,
+        "height": 3120,
+        "avif": "/media/optimized/7561a0013f21-1440.avif",
+        "webp": "/media/optimized/7561a0013f21-1440.webp",
+        "jpeg": "/media/optimized/7561a0013f21-1440.jpg"
+      }
+    ]
+  },
+  "media/meetime-anniversary/03.jpg": {
+    "width": 1440,
+    "height": 3120,
+    "variants": [
+      {
+        "width": 480,
+        "height": 1040,
+        "avif": "/media/optimized/97788dd66a96-480.avif",
+        "webp": "/media/optimized/97788dd66a96-480.webp",
+        "jpeg": "/media/optimized/97788dd66a96-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 1664,
+        "avif": "/media/optimized/97788dd66a96-768.avif",
+        "webp": "/media/optimized/97788dd66a96-768.webp",
+        "jpeg": "/media/optimized/97788dd66a96-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 2600,
+        "avif": "/media/optimized/97788dd66a96-1200.avif",
+        "webp": "/media/optimized/97788dd66a96-1200.webp",
+        "jpeg": "/media/optimized/97788dd66a96-1200.jpg"
+      },
+      {
+        "width": 1440,
+        "height": 3120,
+        "avif": "/media/optimized/97788dd66a96-1440.avif",
+        "webp": "/media/optimized/97788dd66a96-1440.webp",
+        "jpeg": "/media/optimized/97788dd66a96-1440.jpg"
+      }
+    ]
+  },
+  "media/midea-seasonal/01.png": {
+    "width": 1436,
+    "height": 828,
+    "variants": [
+      {
+        "width": 480,
+        "height": 277,
+        "avif": "/media/optimized/7a9c852bf01c-480.avif",
+        "webp": "/media/optimized/7a9c852bf01c-480.webp",
+        "jpeg": "/media/optimized/7a9c852bf01c-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 443,
+        "avif": "/media/optimized/7a9c852bf01c-768.avif",
+        "webp": "/media/optimized/7a9c852bf01c-768.webp",
+        "jpeg": "/media/optimized/7a9c852bf01c-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 692,
+        "avif": "/media/optimized/7a9c852bf01c-1200.avif",
+        "webp": "/media/optimized/7a9c852bf01c-1200.webp",
+        "jpeg": "/media/optimized/7a9c852bf01c-1200.jpg"
+      },
+      {
+        "width": 1436,
+        "height": 828,
+        "avif": "/media/optimized/7a9c852bf01c-1436.avif",
+        "webp": "/media/optimized/7a9c852bf01c-1436.webp",
+        "jpeg": "/media/optimized/7a9c852bf01c-1436.jpg"
+      }
+    ]
+  },
+  "media/illustration-new-1/01.png": {
+    "width": 1814,
+    "height": 812,
+    "variants": [
+      {
+        "width": 480,
+        "height": 215,
+        "avif": "/media/optimized/e4fbcf4a8374-480.avif",
+        "webp": "/media/optimized/e4fbcf4a8374-480.webp",
+        "jpeg": "/media/optimized/e4fbcf4a8374-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 344,
+        "avif": "/media/optimized/e4fbcf4a8374-768.avif",
+        "webp": "/media/optimized/e4fbcf4a8374-768.webp",
+        "jpeg": "/media/optimized/e4fbcf4a8374-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 537,
+        "avif": "/media/optimized/e4fbcf4a8374-1200.avif",
+        "webp": "/media/optimized/e4fbcf4a8374-1200.webp",
+        "jpeg": "/media/optimized/e4fbcf4a8374-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 716,
+        "avif": "/media/optimized/e4fbcf4a8374-1600.avif",
+        "webp": "/media/optimized/e4fbcf4a8374-1600.webp",
+        "jpeg": "/media/optimized/e4fbcf4a8374-1600.jpg"
+      }
+    ]
+  },
+  "media/illustration-new-1/02.png": {
+    "width": 1272,
+    "height": 826,
+    "variants": [
+      {
+        "width": 480,
+        "height": 312,
+        "avif": "/media/optimized/1557252209c7-480.avif",
+        "webp": "/media/optimized/1557252209c7-480.webp",
+        "jpeg": "/media/optimized/1557252209c7-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 499,
+        "avif": "/media/optimized/1557252209c7-768.avif",
+        "webp": "/media/optimized/1557252209c7-768.webp",
+        "jpeg": "/media/optimized/1557252209c7-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 779,
+        "avif": "/media/optimized/1557252209c7-1200.avif",
+        "webp": "/media/optimized/1557252209c7-1200.webp",
+        "jpeg": "/media/optimized/1557252209c7-1200.jpg"
+      },
+      {
+        "width": 1272,
+        "height": 826,
+        "avif": "/media/optimized/1557252209c7-1272.avif",
+        "webp": "/media/optimized/1557252209c7-1272.webp",
+        "jpeg": "/media/optimized/1557252209c7-1272.jpg"
+      }
+    ]
+  },
+  "media/illustration-new-1/03.png": {
+    "width": 1720,
+    "height": 826,
+    "variants": [
+      {
+        "width": 480,
+        "height": 231,
+        "avif": "/media/optimized/754e305b18c3-480.avif",
+        "webp": "/media/optimized/754e305b18c3-480.webp",
+        "jpeg": "/media/optimized/754e305b18c3-480.jpg"
+      },
+      {
+        "width": 768,
+        "height": 369,
+        "avif": "/media/optimized/754e305b18c3-768.avif",
+        "webp": "/media/optimized/754e305b18c3-768.webp",
+        "jpeg": "/media/optimized/754e305b18c3-768.jpg"
+      },
+      {
+        "width": 1200,
+        "height": 576,
+        "avif": "/media/optimized/754e305b18c3-1200.avif",
+        "webp": "/media/optimized/754e305b18c3-1200.webp",
+        "jpeg": "/media/optimized/754e305b18c3-1200.jpg"
+      },
+      {
+        "width": 1600,
+        "height": 768,
+        "avif": "/media/optimized/754e305b18c3-1600.avif",
+        "webp": "/media/optimized/754e305b18c3-1600.webp",
+        "jpeg": "/media/optimized/754e305b18c3-1600.jpg"
+      }
+    ]
+  }
+}

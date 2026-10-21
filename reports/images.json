@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-21T02:35:38.437Z",
+  "count": 36,
+  "originalBytes": 82919667,
+  "generatedBytes": 47299998,
+  "files": [
+    {
+      "src": "media/naruto-membership-card/01.png",
+      "originalBytes": 1888512,
+      "generatedBytes": 1169470,
+      "thumbnailWebpBytes": 25386,
+      "detailWebpBytes": 171936
+    },
+    {
+      "src": "media/iflytek-storyboard/01.png",
+      "originalBytes": 663933,
+      "generatedBytes": 713239,
+      "thumbnailWebpBytes": 15428,
+      "detailWebpBytes": 112230
+    },
+    {
+      "src": "media/kfc/01.png",
+      "originalBytes": 951406,
+      "generatedBytes": 1452542,
+      "thumbnailWebpBytes": 92428,
+      "detailWebpBytes": 185348
+    },
+    {
+      "src": "media/xian-community-market/01.png",
+      "originalBytes": 1833366,
+      "generatedBytes": 865569,
+      "thumbnailWebpBytes": 17878,
+      "detailWebpBytes": 145920
+    },
+    {
+      "src": "media/xian-community-market/02.png",
+      "originalBytes": 1787615,
+      "generatedBytes": 1019651,
+      "thumbnailWebpBytes": 25076,
+      "detailWebpBytes": 150980
+    },
+    {
+      "src": "media/xian-community-market/03.png",
+      "originalBytes": 1048500,
+      "generatedBytes": 587358,
+      "thumbnailWebpBytes": 15392,
+      "detailWebpBytes": 77904
+    },
+    {
+      "src": "media/xian-community-market/04.png",
+      "originalBytes": 1898851,
+      "generatedBytes": 1143742,
+      "thumbnailWebpBytes": 29328,
+      "detailWebpBytes": 167656
+    },
+    {
+      "src": "media/chongqing-joy-city/01.png",
+      "originalBytes": 1975059,
+      "generatedBytes": 1986791,
+      "thumbnailWebpBytes": 50984,
+      "detailWebpBytes": 252124
+    },
+    {
+      "src": "media/jinhua-tea/01.png",
+      "originalBytes": 1430552,
+      "generatedBytes": 666159,
+      "thumbnailWebpBytes": 16836,
+      "detailWebpBytes": 85468
+    },
+    {
+      "src": "media/longi-anniversary/01.png",
+      "originalBytes": 770689,
+      "generatedBytes": 1077668,
+      "thumbnailWebpBytes": 31278,
+      "detailWebpBytes": 127566
+    },
+    {
+      "src": "media/longi-anniversary/02.png",
+      "originalBytes": 935350,
+      "generatedBytes": 440678,
+      "thumbnailWebpBytes": 12052,
+      "detailWebpBytes": 50034
+    },
+    {
+      "src": "media/longi-anniversary/03.png",
+      "originalBytes": 516489,
+      "generatedBytes": 564528,
+      "thumbnailWebpBytes": 17006,
+      "detailWebpBytes": 66626
+    },
+    {
+      "src": "media/longi-anniversary/04.png",
+      "originalBytes": 424652,
+      "generatedBytes": 577001,
+      "thumbnailWebpBytes": 16504,
+      "detailWebpBytes": 72648
+    },
+    {
+      "src": "media/capital-outlets/01.png",
+      "originalBytes": 1778865,
+      "generatedBytes": 1519333,
+      "thumbnailWebpBytes": 36180,
+      "detailWebpBytes": 216394
+    },
+    {
+      "src": "media/meetime-satellite/01.jpg",
+      "originalBytes": 5057892,
+      "generatedBytes": 939486,
+      "thumbnailWebpBytes": 20136,
+      "detailWebpBytes": 134132
+    },
+    {
+      "src": "media/meetime-satellite/02.jpg",
+      "originalBytes": 5590150,
+      "generatedBytes": 500712,
+      "thumbnailWebpBytes": 11662,
+      "detailWebpBytes": 66790
+    },
+    {
+      "src": "media/meetime-satellite/03.jpg",
+      "originalBytes": 1872794,
+      "generatedBytes": 405988,
+      "thumbnailWebpBytes": 8754,
+      "detailWebpBytes": 55900
+    },
+    {
+      "src": "media/meetime-satellite/04.jpg",
+      "originalBytes": 22218598,
+      "generatedBytes": 2269290,
+      "thumbnailWebpBytes": 55064,
+      "detailWebpBytes": 345596
+    },
+    {
+      "src": "media/meetime-satellite/05.png",
+      "originalBytes": 851797,
+      "generatedBytes": 811634,
+      "thumbnailWebpBytes": 55900,
+      "detailWebpBytes": 105750
+    },
+    {
+      "src": "media/china-mobile/01.png",
+      "originalBytes": 1465743,
+      "generatedBytes": 824890,
+      "thumbnailWebpBytes": 20338,
+      "detailWebpBytes": 123266
+    },
+    {
+      "src": "media/satellite-posters/01.jpg",
+      "originalBytes": 2459523,
+      "generatedBytes": 1972583,
+      "thumbnailWebpBytes": 32956,
+      "detailWebpBytes": 357578
+    },
+    {
+      "src": "media/satellite-posters/02.jpg",
+      "originalBytes": 1750041,
+      "generatedBytes": 1932035,
+      "thumbnailWebpBytes": 44858,
+      "detailWebpBytes": 294876
+    },
+    {
+      "src": "media/huawei-scenarios/01.jpg",
+      "originalBytes": 1392386,
+      "generatedBytes": 1774666,
+      "thumbnailWebpBytes": 97632,
+      "detailWebpBytes": 271796
+    },
+    {
+      "src": "media/huawei-scenarios/02.jpg",
+      "originalBytes": 1284755,
+      "generatedBytes": 1603436,
+      "thumbnailWebpBytes": 86642,
+      "detailWebpBytes": 242870
+    },
+    {
+      "src": "media/huawei-scenarios/03.jpg",
+      "originalBytes": 1298233,
+      "generatedBytes": 1639642,
+      "thumbnailWebpBytes": 90004,
+      "detailWebpBytes": 252298
+    },
+    {
+      "src": "media/huawei-scenarios/04.jpg",
+      "originalBytes": 1398239,
+      "generatedBytes": 1745508,
+      "thumbnailWebpBytes": 98676,
+      "detailWebpBytes": 272396
+    },
+    {
+      "src": "media/huawei-scenarios/05.jpg",
+      "originalBytes": 1299784,
+      "generatedBytes": 1620211,
+      "thumbnailWebpBytes": 88474,
+      "detailWebpBytes": 249208
+    },
+    {
+      "src": "media/huawei-scenarios/06.jpg",
+      "originalBytes": 1260602,
+      "generatedBytes": 1590650,
+      "thumbnailWebpBytes": 87408,
+      "detailWebpBytes": 248398
+    },
+    {
+      "src": "media/little-swan/01.png",
+      "originalBytes": 1955012,
+      "generatedBytes": 1343373,
+      "thumbnailWebpBytes": 36470,
+      "detailWebpBytes": 192706
+    },
+    {
+      "src": "media/meetime-anniversary/01.jpg",
+      "originalBytes": 1409748,
+      "generatedBytes": 1679694,
+      "thumbnailWebpBytes": 49674,
+      "detailWebpBytes": 174288
+    },
+    {
+      "src": "media/meetime-anniversary/02.jpg",
+      "originalBytes": 2435717,
+      "generatedBytes": 2764279,
+      "thumbnailWebpBytes": 80898,
+      "detailWebpBytes": 358428
+    },
+    {
+      "src": "media/meetime-anniversary/03.jpg",
+      "originalBytes": 2722184,
+      "generatedBytes": 3775674,
+      "thumbnailWebpBytes": 108980,
+      "detailWebpBytes": 480744
+    },
+    {
+      "src": "media/midea-seasonal/01.png",
+      "originalBytes": 1694002,
+      "generatedBytes": 1187615,
+      "thumbnailWebpBytes": 32500,
+      "detailWebpBytes": 153922
+    },
+    {
+      "src": "media/illustration-new-1/01.png",
+      "originalBytes": 2276253,
+      "generatedBytes": 1124045,
+      "thumbnailWebpBytes": 25622,
+      "detailWebpBytes": 177382
+    },
+    {
+      "src": "media/illustration-new-1/02.png",
+      "originalBytes": 1327309,
+      "generatedBytes": 1012391,
+      "thumbnailWebpBytes": 31308,
+      "detailWebpBytes": 114474
+    },
+    {
+      "src": "media/illustration-new-1/03.png",
+      "originalBytes": 1995066,
+      "generatedBytes": 998467,
+      "thumbnailWebpBytes": 21004,
+      "detailWebpBytes": 172668
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-21T02:57:03.423Z",
+  "environment": "happy-dom; no layout engine, native dialog mocked",
+  "results": [
+    "URL restores poster filter (9 works)",
+    "Click filters and updates shareable URL",
+    "Unknown category displays empty state",
+    "Lightbox opens, arrow navigation works, close restores focus",
+    "Failed media shows fallback and disables zoom",
+    "32 old IDs resolve to existing independent routes"
+  ]
+}

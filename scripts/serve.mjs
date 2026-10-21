@@ -1,0 +1,7 @@
+import http from 'node:http';
+import fs from 'node:fs';
+import path from 'node:path';
+if(!fs.existsSync('dist/index.html')){const {execFileSync}=await import('node:child_process');execFileSync(process.execPath,['scripts/build.mjs'],{stdio:'inherit'});}
+const root=path.resolve('dist');const types={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.json':'application/json','.svg':'image/svg+xml','.xml':'application/xml','.jpg':'image/jpeg','.png':'image/png','.webp':'image/webp','.avif':'image/avif','.gif':'image/gif','.txt':'text/plain'};
+const port=Number(process.env.PORT||4321);
+http.createServer((req,res)=>{let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{res.writeHead(400);res.end();return;}let target=path.resolve(root,'.'+pathname);if(!target.startsWith(root+path.sep)&&target!==root){res.writeHead(403);res.end();return;}let code=200;if(fs.existsSync(target)&&fs.statSync(target).isDirectory()){if(!pathname.endsWith('/')){res.writeHead(301,{Location:pathname+'/'});res.end();return;}target=path.join(target,'index.html');}if(!fs.existsSync(target)||!fs.statSync(target).isFile()){target=path.join(root,'404.html');code=404;}res.writeHead(code,{'Content-Type':types[path.extname(target)]||'application/octet-stream','Cache-Control':'no-store'});fs.createReadStream(target).pipe(res);}).listen(port,'127.0.0.1',()=>console.log(`Local: http://127.0.0.1:${port}`));

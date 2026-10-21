@@ -1,0 +1,25 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import path from 'node:path';
+import os from 'node:os';
+const root=process.env.AGNES_ASSETS||path.join(os.homedir(),'Documents/作品');
+const ctx={};vm.createContext(ctx);
+vm.runInContext(fs.readFileSync('legacy/data.js','utf8'),ctx);
+vm.runInContext(fs.readFileSync('legacy/detail.js','utf8'),ctx);
+const slugs=['boda-wayfinding','jieye-unicorn','null-pointer-band','pixel-characters','yilu-tea','tedx-xian','hongxin-education','huayang-scenic','concert-bill','changan-heibang','deal-photography','fly-over-xian','boda-website','tianjin-faculty','xian-orchestra','xian-city-wall','poster-studies','i-am-hera','street-corner-one','afternoon-tea','oh-puchi','illustration-study','mushroom-person','ah','sketches-one','sketches-two','street-corner-two','inoue-takehiko','self-portrait','send-a-letter','dream-changan','type-experiments'];
+const cat={communication:'communication',uiDesign:'ui',web:'web',posterDesign:'poster',illustion:'illustration'};
+const tree=JSON.parse(fs.readFileSync('legacy/legacy-tree.json','utf8'));
+const files=new Set(tree.tree.filter(x=>x.type==='blob').map(x=>x.path));
+const clean=s=>s.replace(/<br\s*\/?\s*>/gi,'\n').replace(/<[^>]*>/g,'').trim();
+const projects=ctx.indexImgs.map((p,i)=>{const id=Number(p.linkUrl.match(/id=(\d+)/)[1]);const d=ctx.detailData.find(d=>d.index===id);return {title:d?.title||p.imgTitle,slug:slugs[id],category:cat[p.genre],tags:[],year:null,client:'',summary:id===1?'':clean(d?.descriptionChinese||''),role:'',background:'',goal:'',process:'',outcome:'',cover:p.imgUrl.replace(/^\.\//,''),media:(d?.imgs||[]).map((src,j)=>({src:src.replace(/^\.\//,''),alt:`${d.title} · 作品图 ${j+1}`,caption:''})),featured:[5,15,8,14].includes(id),order:100+i,status:'public',legacyId:id,source:'legacy',notes:id===1?'旧说明与环境导视重复，已暂隐藏，原文在 legacy/detail.js。':''}});
+const groups=[['Communication Design ','communication'],['Ux Design','ui'],['Poster Design','poster'],['Illustration','illustration'],['Web Design','web']];
+const names={ '隆基20周年年历及新年物料':'longi-anniversary','火影忍者集享卡':'naruto-membership-card','肯德基':'kfc','金花茯茶':'jinhua-tea','科大讯飞storyboard':'iflytek-storyboard','首创奥莱':'capital-outlets','西安扶贫超市品牌全案':'xian-community-market','重庆大悦城':'chongqing-joy-city','畅连北斗卫星消息（红点奖）':'meetime-satellite','华为产品场景海报':'huawei-scenarios','北斗卫星消息海报':'satellite-posters','美的洗衣机节气海报':'midea-seasonal','小天鹅洗衣机系列海报':'little-swan','中国移动海报':'china-mobile','畅连3周年':'meetime-anniversary'};
+let n=0;const manifest=[];
+for(const [folder,category] of groups){const dir=path.join(root,folder);if(!fs.existsSync(dir))continue;const entries=fs.readdirSync(dir,{withFileTypes:true});const buckets=entries.filter(e=>e.isDirectory()).map(e=>[e.name,fs.readdirSync(path.join(dir,e.name)).filter(f=>/\.(png|jpe?g|webp|gif)$/i.test(f)).sort().map(f=>path.join(dir,e.name,f))]);
+ const loose=entries.filter(e=>e.isFile()&&/\.(png|jpe?g|webp)$/i.test(e.name)&&e.name!=='logo.png').map(e=>path.join(dir,e.name));if(loose.length)buckets.push(['插画近作',loose]);
+ for(const [title,paths] of buckets){if(!paths.length)continue;const slug=names[title]||`illustration-new-${++n}`;const media=paths.map((p,j)=>{const src=`media/${slug}/${String(j+1).padStart(2,'0')}${path.extname(p).toLowerCase()}`;manifest.push({original:path.relative(root,p),src});return {src,alt:`${title.replace('（红点奖）','')} · 作品图 ${j+1}`,caption:''}});projects.push({title:title.replace('（红点奖）',''),slug,category,tags:[],year:null,client:'',summary:'',role:'',background:'',goal:'',process:'',outcome:'',cover:media[0].src,media,featured:['meetime-satellite','longi-anniversary','huawei-scenarios','meetime-anniversary'].includes(slug),order:projects.length-32,status:'public',source:'provided',notes:'标题依据用户提供的文件夹；职责、时间、成果未提供。文件夹中的奖项字样不作为个人获奖事实发布。'});}}
+fs.writeFileSync('content/projects.json',JSON.stringify(projects,null,2)+'\n');
+fs.writeFileSync('content/media-sources.json',JSON.stringify(manifest,null,2)+'\n');
+const missing=projects.flatMap(p=>[p.cover,...p.media.map(x=>x.src)].filter(src=>p.source==='legacy'&&!files.has(src)).map(src=>({title:p.title,src})));
+fs.writeFileSync('reports/migration.json',JSON.stringify({legacyCommit:tree.sha,legacyCount:32,newCount:projects.length-32,missingPaths:missing,projects:projects.map(p=>({title:p.title,slug:p.slug,legacyId:p.legacyId,source:p.source,media:p.media.length,notes:p.notes,missingDescription:!p.summary}))},null,2)+'\n');
+console.log({projects:projects.length,new:projects.length-32,missing});

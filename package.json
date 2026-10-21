@@ -1,0 +1,16 @@
+{
+  "name": "agnes-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "images": "node scripts/images.mjs",
+    "download:legacy": "node scripts/download-legacy.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "optionalDependencies": { "sharp": "0.34.5" }
+}
