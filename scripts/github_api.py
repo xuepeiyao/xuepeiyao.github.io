@@ -87,13 +87,16 @@ def sync(source,api,cache_path=None):
     previous=None
     try:previous=json.loads(state_path.read_text())
     except (OSError,ValueError):pass
-    if previous and previous.get('fingerprint')==fingerprint and previous.get('commit') and previous.get('branch'):
+    reuse_branch=bool(previous and previous.get('commit') and previous.get('branch'))
+    if reuse_branch:
         ref=api.request('GET',prefix+'/git/ref/heads/'+previous['branch'])
         if ref['object']['sha']!=previous['commit']:raise RuntimeError('远程开发分支已被修改，已停止以避免覆盖。')
+    if reuse_branch and previous.get('fingerprint')==fingerprint:
         state=previous
         print('继续之前已上传的开发分支：'+state['branch'],flush=True)
     else:
-        head=api.request('GET',prefix+'/commits/'+urllib.parse.quote(default,safe=''))
+        base_ref=previous['commit'] if reuse_branch else default
+        head=api.request('GET',prefix+'/commits/'+urllib.parse.quote(base_ref,safe=''))
         oldtree=api.request('GET',prefix+'/git/trees/'+head['commit']['tree']['sha']+'?recursive=1')
         known.update(item['sha'] for item in oldtree['tree'] if item['type']=='blob')
         print('通过 GitHub API 上传 '+str(len(entries))+' 个文件（不再 clone，不使用 Git TLS）。',flush=True)
@@ -113,13 +116,19 @@ def sync(source,api,cache_path=None):
         tree=api.request('POST',prefix+'/git/trees',{'base_tree':head['commit']['tree']['sha'],
             'tree':[{'path':item['path'],'mode':'100644','type':'blob','sha':item['sha']} for item in entries]})
         commit=api.request('POST',prefix+'/git/commits',{'message':'Rebuild Agnes portfolio with migrated content and browser checks','tree':tree['sha'],'parents':[head['sha']]})
-        branch='rebuild/agnes-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f')
-        try:api.request('POST',prefix+'/git/refs',{'ref':'refs/heads/'+branch,'sha':commit['sha']})
-        except RuntimeError as original:
-            # A lost response may occur after GitHub has accepted the write.
-            try:ref=api.request('GET',prefix+'/git/ref/heads/'+branch)
-            except RuntimeError:raise original
-            if ref['object']['sha']!=commit['sha']:raise RuntimeError('无法确认新分支状态，停止以避免覆盖。')
+        branch=previous['branch'] if reuse_branch else 'rebuild/agnes-'+datetime.datetime.now().strftime('%Y%m%d-%H%M%S-%f')
+        if reuse_branch:
+            latest=api.request('GET',prefix+'/git/ref/heads/'+branch)
+            if latest['object']['sha']!=previous['commit']:raise RuntimeError('开发分支已变化，已停止以避免覆盖他人修改。')
+            api.request('PATCH',prefix+'/git/refs/heads/'+branch,{'sha':commit['sha'],'force':False})
+            print('修复已同步到原开发分支，将重新运行 PR 检查。',flush=True)
+        else:
+            try:api.request('POST',prefix+'/git/refs',{'ref':'refs/heads/'+branch,'sha':commit['sha']})
+            except RuntimeError as original:
+                # A lost response may occur after GitHub has accepted the write.
+                try:ref=api.request('GET',prefix+'/git/ref/heads/'+branch)
+                except RuntimeError:raise original
+                if ref['object']['sha']!=commit['sha']:raise RuntimeError('无法确认新分支状态，停止以避免覆盖。')
         state={'branch':branch,'commit':commit['sha'],'base':default,'fingerprint':fingerprint,
             'uploaded_at':datetime.datetime.now().astimezone().isoformat(),'production_changed':False,'status':'branch_uploaded'}
         save_json(state_path,state)

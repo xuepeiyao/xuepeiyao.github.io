@@ -7,7 +7,7 @@ const sourceRoot=process.env.AGNES_ASSETS||path.join(os.homedir(),'Documents/作
 const legacyOnly=process.argv.includes('--legacy-only');
 const manifest=legacyOnly?[]:JSON.parse(fs.readFileSync('content/media-sources.json','utf8'));
 const projects=JSON.parse(fs.readFileSync('content/projects.json','utf8'));
-for(const p of projects.filter(p=>p.source==='legacy'))for(const src of new Set([p.cover,...p.media.map(m=>m.src)])){const original=path.join('originals',src);if(fs.existsSync(original))manifest.push({original,src});}
+for(const p of projects.filter(p=>p.source==='legacy'))for(const src of new Set([p.cover,...p.media.map(m=>m.src)])){const original=path.resolve('originals',src);if(fs.existsSync(original))manifest.push({original,src});}
 const meta=fs.existsSync('content/image-meta.json')?JSON.parse(fs.readFileSync('content/image-meta.json','utf8')):{};const report=[];
 for(const entry of manifest){
  const {src}=entry;const original=path.isAbsolute(entry.original)?entry.original:path.join(sourceRoot,entry.original);

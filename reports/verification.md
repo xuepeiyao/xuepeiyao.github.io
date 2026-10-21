@@ -94,3 +94,15 @@ PR 工作流增加 pull_request 触发，解决“默认分支还没有工作流
 新增一次受限的本机交互令牌更换：上传收到401时暂停，打开官方7天细粒度令牌表单，用户在终端隐藏输入并验证新令牌，再用原请求继续当前文件。每次运行最多进行一次途中换令牌，避免无限重复。启动时旧令牌验证401也允许一次替换；不把401当成普通网络错误反复重试。
 
 语法、401后换令牌继续同一请求、换后仍401立即停止、原断点续传模拟测试通过。没有获取用户真实新令牌，也未执行实际远程续传；需要用户本机输入有效令牌。
+
+## 首次远程构建验证及修复（2026-10-21）
+
+已通过 GitHub API 核实草稿 PR #1：https://github.com/xuepeiyao/xuepeiyao.github.io/pull/1 。分支 rebuild/agnes-20261021-165246-302178，提交 be94292f3c1aec167104345b8b391fbc87552538。线上尚未切换。
+
+远程运行 39572657856 在 Optimize legacy images 失败：ENOENT /home/runner/Documents/作品/originals/images/poster-design/one/index.png。原因是脚本将项目内旧图相对路径再次拼到新素材目录。已改为在组装旧图清单时 path.resolve('originals',src)，确保与 AGNES_ASSETS 独立。
+
+使用真实 sharp 和临时32x24图片回归验证，legacy-only 与普通模式均成功生成 AVIF、WebP、JPEG。不是仅语法检查。
+
+GitHub 连接直接更新远程文件仍返回403 Resource not accessible by integration，不能替代用户本机授权。同步脚本已支持向原开发分支追加修复提交并复用原PR：核实远程HEAD、以旧开发提交为父提交、force=false；不更新master、不另建PR，已通过模拟验证。
+
+修复目前在本地，需再次运行桌面上传脚本同步少量变化。此前的远程运行失败，后续构建和真实浏览器检查尚未运行，不能宣称已具备发布条件。
